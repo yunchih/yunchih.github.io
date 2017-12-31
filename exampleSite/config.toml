@@ -1,23 +1,24 @@
-baseurl = "https://example.org"
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Lithium Theme"
-theme = "hugo-lithium-theme"
-googleAnalytics = ""
-disqusShortname = ""
+title = "Natrium Theme"
+theme = "hugo-natrium-theme"
+preserveTaxonomyNames = true
+rssLimit = 10
+
+[taxonomies]
+    category = "categories"  
+    tag = "tags"
 
 [permalinks]
-    post = "/:year/:month/:day/:title/"
-    page = "/:title/"
+    post = "/:slug/"
+    page = "/:slug/"
 
 [[menu.main]]
     name = "About"
     url = "/about/"
 [[menu.main]]
-    name = "GitHub"
-    url = ""
-[[menu.main]]
-    name = "Twitter"
-    url = ""
+    name = "Categories"
+    url = "/categories"
 
 [params]
     description = ""
@@ -27,4 +28,3 @@ disqusShortname = ""
     width = 50
     height = 50
     alt = "Logo"
-
