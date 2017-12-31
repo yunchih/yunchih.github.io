@@ -1,0 +1,14 @@
+[footerHugo]
+other = "Generiert mit"
+
+[footerRSS]
+other = "RSS-Feed"
+
+[siteNotice]
+other = "Seitenhinweise"
+
+[categories]
+other = "Kategorien"
+
+[tags]
+other = "Schlagworte"
