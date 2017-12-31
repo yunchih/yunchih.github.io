@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<main class="content" role="main">
+
+  <div class="archive">
+    <h2 class="archive-title">{{ i18n "categories" }}</h2>
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms.Alphabetical }}
+    <article class="archive-item">
+      <a href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}" class="archive-item-link">{{ $value.Name }}</a>
+      <span class="archive-item-count">
+        {{ $value.Count }}
+      </span>
+    </article>   
+    {{ end }}
+  </div>
+
+</main>
+
+{{ partial "footer.html" . }}
