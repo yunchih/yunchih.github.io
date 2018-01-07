@@ -1,10 +1,8 @@
 {{ partial "header.html" . }}
 
 <main class="content" role="main">
-
   <article class="article">
     <h1 class="article-title">{{ .Title }}</h1>
-
     {{ if eq .Section "post" }}
     <span class="article-date">{{ .Date.Format "2006-01-02" }}</span>
     {{ end }}
@@ -12,12 +10,19 @@
     <div class="article-content">
       {{ .Content }}
     </div>
-    
-    {{ if .Params.categories }}
-    <span class="article-categories"><img class="icon-img" src="/images/category.svg">&nbsp;{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }} | {{ end }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</span>
+ 
+    <ul class="article-taxonomy">
+      {{ if .Params.categories }}
+      <hr align="left">
+      <li><img class="article-taxonomy-icon" src="/images/category.svg">&nbsp;{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }} | {{ end }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</li>
+    {{ end }}
+  
+     <ul class="article-taxonomy">
+       {{ if .Params.tags }}
+       <li><img class="article-taxonomy-icon" src="/images/tag.svg">&nbsp;{{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }} | {{ end }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</li>
     {{ end }}
   </article>
-  
+
 </main>
 
 {{ partial "footer.html" . }}
