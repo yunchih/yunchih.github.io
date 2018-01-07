@@ -52,6 +52,7 @@ pre code {
 
 a {
   outline: none;
+  background-color: transparent;
 }
 
 .wrapper {
@@ -111,8 +112,9 @@ a {
   color: #111;
 }
 
-.nav-links a:hover {
-  color: #000;
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #4f4f4f;
 }
 
 .content {
@@ -244,7 +246,9 @@ a {
 }
 
 .archive-item a:hover,
-.category-item a:hover {
+.archive-item a:focus,
+.category-item a:hover,
+.category-item a:focus {
   border-bottom-color: #222;
 }
 
@@ -290,7 +294,8 @@ a {
   transition: color 300ms ease;
 }
 
-.tag-cloud-item a:hover {
+.tag-cloud-item a:hover,
+.tag-cloud-item a:focus {
    color: #4f4f4f;
 }
 
