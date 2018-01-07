@@ -3,9 +3,9 @@ license = "MIT"
 licenselink = "https://github.com/mobybit/hugo-natrium-theme/blob/master/LICENSE.md"
 description = "Natrium minimal theme"
 homepage = "https://github.com/mobybit/hugo-natrium-theme"
-tags = ["blog"]
-features = ["blog", "taxonomies", "privacy", "i18n"]
-min_version = 0.14
+tags = ["blog", "minimal", "personal", "responsive"]
+features = ["blog", "taxonomies", "privacy"]
+min_version = 0.25
 
 [author]
   name = "Tim Krieger"
