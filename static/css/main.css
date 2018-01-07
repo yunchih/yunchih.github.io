@@ -152,7 +152,8 @@ a {
 }
 
 .article-content a:hover,
-.article-content a:focus {
+.article-content a:focus,
+.article-content a:active {
   border-color: #555;
 }
 
