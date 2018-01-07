@@ -1,6 +1,3 @@
-[footerHugo]
-other = "Generiert mit"
-
 [footerRSS]
 other = "RSS-Feed"
 
@@ -11,4 +8,4 @@ other = "Seitenhinweise"
 other = "Kategorien"
 
 [tags]
-other = "Schlagworte"
+other = "Tags"
