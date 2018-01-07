@@ -4,6 +4,7 @@ title = "Natrium Theme"
 theme = "hugo-natrium-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
+paginate = 10
 
 [taxonomies]
     category = "categories"  
@@ -16,9 +17,17 @@ rssLimit = 10
 [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = -110
+    
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = -120
+
 [[menu.main]]
     name = "Categories"
     url = "/categories"
+    weight = -130
 
 [params]
     description = ""
