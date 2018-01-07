@@ -1,17 +1,19 @@
 {{ partial "header.html" . }}
 
-<main class="content" role="main">
+<main class="content">
 
-  <div class="archive">
-    <h2 class="archive-title">{{ i18n "categories" }}</h2>
+  <div class="category">
+    <h2 class="category-title">{{ i18n "categories" }}</h2>
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms.Alphabetical }}
-    <article class="archive-item">
-      <a href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}" class="archive-item-link">{{ $value.Name }}</a>
-      <span class="archive-item-count">
-        {{ $value.Count }}
-      </span>
-    </article>   
+    <ul class="category-item">
+      <li>
+      <a href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+      <span class="category-item-count">
+        <sup>({{ $value.Count }})</sup>
+       </span>
+      </li>
+    </ul>   
     {{ end }}
   </div>
 
