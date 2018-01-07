@@ -8,7 +8,7 @@ A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Lithium]
 - Responsive
 - i18n
 - Privacy
-- Taxonomies (categories)
+- Taxonomies
 
 ## Installation
 
@@ -45,6 +45,8 @@ Run `hugo new page/<page-name>.md` to create a page.
 
 ## License
 
-The code is available under the [MIT license](https://github.com/mobybit/hugo-natrium-theme/blob/master/LICENSE.md). 
+The code is available under the [MIT License](https://github.com/mobybit/hugo-natrium-theme/blob/master/LICENSE.md). 
 
-Natrium is using icons from [Feather](https://feather.netlify.com/) by Cole Bemis ([MIT](https://github.com/colebemis/feather/blob/master/LICENSE)).
+Natrium is using icons from [Ionic](https://github.com/ionic-team/ionicicons/) ([MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE)) designed by Ben Sperry.
+
+Special thanks to [Artem Sidorenko](https://www.sidorenko.io/post/2017/07/nice-tagcloud-with-hugo/) (tag cloud).
