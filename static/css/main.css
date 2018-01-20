@@ -374,19 +374,19 @@ a {
   font-style: normal;
 }
 
-.fa-rss:before {
+.fa-rss::before {
   content: "\f09e";
 }
 
-.fa-github:before {
+.fa-github::before {
   content: "\f09b";
 }
 
-.fa-tags:before {
+.fa-tags::before {
   content: "\f02c";
 }
 
-.fa-category:before {
+.fa-category::before {
   content: "\f07c";
 }
 
