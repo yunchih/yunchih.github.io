@@ -14,12 +14,12 @@
     <ul class="article-taxonomy">
       {{ if .Params.categories }}
       <hr align="left">
-      <li><img class="article-taxonomy-icon" src="/images/category.svg">&nbsp;{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }} | {{ end }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</li>
+      <li><i class="fa fa-category"></i> {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }} · {{ end }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</li>
     {{ end }}
   
      <ul class="article-taxonomy">
        {{ if .Params.tags }}
-       <li><img class="article-taxonomy-icon" src="/images/tag.svg">&nbsp;{{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }} | {{ end }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</li>
+       <li><i class="fa fa-tags"></i> {{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }} · {{ end }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</li>
     {{ end }}
   </article>
 
