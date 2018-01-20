@@ -47,6 +47,6 @@ Run `hugo new page/<page-name>.md` to create a page.
 
 The code is available under the [MIT License](https://github.com/mobybit/hugo-natrium-theme/blob/master/LICENSE.md). 
 
-Natrium is using icons from [Ionic](https://github.com/ionic-team/ionicicons/) ([MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE)) designed by Ben Sperry.
+Natrium is using [Font Awesome](http://fontawesome.io) by Dave Gandy ([SIL OFL 1.1](http://scripts.sil.org/OFL)).
 
 Special thanks to [Artem Sidorenko](https://www.sidorenko.io/post/2017/07/nice-tagcloud-with-hugo/) (tag cloud).
