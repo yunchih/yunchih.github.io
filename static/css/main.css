@@ -204,10 +204,6 @@ a {
   display: none;
 }
 
-.article-taxonomy a:first-child::before {
-  padding-left: 10px;
-}
-
 .archive,
 .category,
 .tag-cloud {  
