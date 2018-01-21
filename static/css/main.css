@@ -184,7 +184,7 @@ a {
 }
 
 .article-taxonomy a {
-  padding: 0 5px;
+  padding: 0 10px 0 10px;
   text-decoration: none;
   color: #111;
   transition: color 300ms ease;
@@ -197,7 +197,6 @@ a {
 
 .article-taxonomy a::after {
   content: '·';
-  padding: 0 10px 0 10px;
 }
 
 .article-taxonomy a:last-child::after {
