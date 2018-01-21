@@ -195,6 +195,15 @@ a {
   color: #4f4f4f;
 }
 
+.article-taxonomy a::after {
+  content: '·';
+  padding: 0 10px 0 10px;
+}
+
+.article-taxonomy a:last-child::after {
+  display: none;
+}
+
 .archive,
 .category,
 .tag-cloud {  
