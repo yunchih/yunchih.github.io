@@ -20,10 +20,6 @@ $ cd themes
 $ git clone https://github.com/mobybit/hugo-natrium-theme
 ```
 
-## Fonts
-
-You will need to keep a local copy (/static/fonts/) from the theme related [fonts](https://github.com/mobybit/hugo-natrium-theme/tree/master/static/css/fonts.css). Maybe you could try [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts).
-
 ## Configuration
 
 Take a look at the sample [config.toml](https://github.com/mobybit/hugo-natrium-theme/blob/master/exampleSite/config.toml)
@@ -47,6 +43,8 @@ Run `hugo new page/<page-name>.md` to create a page.
 
 The code is available under the [MIT License](https://github.com/mobybit/hugo-natrium-theme/blob/master/LICENSE.md). 
 
-Natrium is using [Font Awesome](http://fontawesome.io) by Dave Gandy ([SIL OFL 1.1](http://scripts.sil.org/OFL)).
+Natrium is using [Font Awesome](http://fontawesome.io) by Dave Gandy ([SIL OFL 1.1](http://scripts.sil.org/OFL)). Realated files (CSS, LESS, SCSS) are licensed under the [MIT License](http://opensource.org/licenses/mit-license.html).
+
+Other used fonts are [Merriweather](https://github.com/EbenSorkin/Merriweather) by Sorkin Type ([SIL OFL 1.1](http://scripts.sil.org/OFL)), [Lato](http://www.latofonts.com/) by Łukasz Dziedzic ([SIL OFL 1.1](http://scripts.sil.org/OFL)) and [Roboto Mono](https://github.com/google/roboto/) by Christian Robertson ([Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)).
 
 Special thanks to [Artem Sidorenko](https://www.sidorenko.io/post/2017/07/nice-tagcloud-with-hugo/) (tag cloud).
