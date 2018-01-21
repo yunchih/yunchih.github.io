@@ -218,7 +218,8 @@ img {
   transition: opacity 300ms ease;  
 }
 
-.article-img:hover {   
+.article-img:hover,
+.article-img:focus {   
   opacity: 1;  
 }
 
