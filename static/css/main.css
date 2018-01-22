@@ -182,9 +182,8 @@ img {
 }
 
 .article-taxonomy hr {
-  display: inline-block;
   width: 200px;
-  margin: 5px 0;
+  margin: 5px 0 10px 0;
   height: 1px;
   border: none;
   background: #e5e5e5;
@@ -192,6 +191,7 @@ img {
 
 .article-taxonomy a {
   display: inline-block;
+  padding: 0 10px 0 0;
   text-decoration: none;
   color: #4b4b4b;
   transition: color 300ms ease;
@@ -199,16 +199,7 @@ img {
 
 .article-taxonomy a:hover,
 .article-taxonomy a:focus {
-  color: #111;
-}
-
-.article-taxonomy a::after {
-  content: '·';
-  padding: 0 5px;
-}
-
-.article-taxonomy a:last-child::after {
-  display: none;
+  color: #ccc;
 }
 
 .article-img {
@@ -239,6 +230,7 @@ img {
 .tag-cloud-title {
   font-size: 32px;
   margin-top: 60px;
+  padding-bottom: 10px;
 }
 
 .archive-item {
@@ -416,10 +408,14 @@ img {
 
 .fa-tags::before {
   content: "\f02c";
+  float: left;
+  padding: 0px 10px 50px 0;
 }
 
 .fa-category::before {
   content: "\f07c";
+  float: left;
+  padding: 0 10px 0px 0;
 }
 
 @media (min-width: 600px) {
