@@ -219,7 +219,8 @@ img {
 }
 
 .article-img:hover,
-.article-img:focus {   
+.article-img:focus,
+.article-img:active {   
   opacity: 1;  
 }
 
@@ -270,8 +271,10 @@ img {
 
 .archive-item a:hover,
 .archive-item a:focus,
+.archive-item a:active,
 .category-item a:hover,
-.category-item a:focus {
+.category-item a:focus,
+.archive-item a:active {
   border-bottom-color: #222;
 }
 
@@ -318,7 +321,8 @@ img {
 }
 
 .tag-cloud-item a:hover,
-.tag-cloud-item a:focus {
+.tag-cloud-item a:focus,
+.tag-cloud-item a:active {
    color: #4b4b4b;
 }
 
