@@ -51,10 +51,6 @@ pre code {
 
 a {
   outline: none;
-}
-
-a:active,
-a:hover {
   background-color: transparent;
 }
 
