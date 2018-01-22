@@ -204,7 +204,7 @@ img {
 
 .article-img {
   padding: 2px;
-  border: solid 1px #ccc;
+  border: solid 1px #e6e6e6;
   opacity: 1;
   transition: opacity 300ms ease;  
 }
