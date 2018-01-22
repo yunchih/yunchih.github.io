@@ -53,7 +53,8 @@ a {
   outline: none;
 }
 
-a:active {
+a:active,
+a:hover {
   background-color: transparent;
 }
 
