@@ -214,14 +214,14 @@ img {
 .article-img {
   padding: 2px;
   border: solid 1px #ccc;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 300ms ease;  
 }
 
 .article-img:hover,
 .article-img:focus,
 .article-img:active {   
-  opacity: 1;  
+  opacity: 0.5;  
 }
 
 .archive,
