@@ -198,7 +198,8 @@ img {
 }
 
 .article-taxonomy a:hover,
-.article-taxonomy a:focus {
+.article-taxonomy a:focus,
+.article-taxonomy a:active {
   color: #ccc;
 }
 
