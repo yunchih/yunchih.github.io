@@ -5,6 +5,8 @@ theme = "hugo-natrium-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
+pygmentsCodefences = true
+pygmentsStyle = "vim"
 
 [taxonomies]
     category = "categories"  
