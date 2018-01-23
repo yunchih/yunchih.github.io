@@ -2,13 +2,18 @@
 
 A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Lithium](https://github.com/jrutheiser/hugo-lithium-theme.git)
 
+## History
+
+I learned a lot while playing with the code from Lithium. I'm an absolutly beginner. Please report any issue you recognize.
+
 ## Features
 
 - Blog
 - Responsive
-- i18n
-- Privacy
+- Privacy (no Google)
 - Taxonomies
+- Syntax highlighting
+- Pagination
 
 ## Installation
 
@@ -38,6 +43,10 @@ Run `hugo new post/<post-name>.md` to create a post.
 Used for site pages.
 
 Run `hugo new page/<page-name>.md` to create a page.
+
+## Syntax highlighting
+
+Natrium is using [Chroma](https://gohugo.io/content-management/syntax-highlighting/) and pygmentsStyle = "vim" by default. If you would like to use another style you have to adjust the `pre colors` in main.css.
 
 ## License
 
