@@ -2,6 +2,10 @@
 
 A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Lithium](https://github.com/jrutheiser/hugo-lithium-theme.git)
 
+## Changes
+
+Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, syntax highlighting, better support for code and img, pagination, multiple design optimizations, i18n...
+
 ## History
 
 I learned a lot while playing with the code from Lithium. I'm an absolutly beginner. Please report any issue you recognize.
@@ -46,7 +50,7 @@ Run `hugo new page/<page-name>.md` to create a page.
 
 ## Syntax highlighting
 
-Natrium is using [Chroma](https://gohugo.io/content-management/syntax-highlighting/) and pygmentsStyle = "vim" by default. If you would like to use another style you have to adjust the `pre colors` in main.css.
+Natrium is using [Chroma](https://gohugo.io/content-management/syntax-highlighting/) and `pygmentsStyle = "vim"` by default. If you would like to use another style you have to adjust the `pre colors` in main.css.
 
 ## License
 
