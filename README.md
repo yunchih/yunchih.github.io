@@ -50,7 +50,7 @@ Run `hugo new page/<page-name>.md` to create a page.
 
 ## Syntax highlighting
 
-Natrium is using [Chroma](https://gohugo.io/content-management/syntax-highlighting/) and `pygmentsStyle = "vim"` by default. If you would like to use another style you have to adjust the `pre colors` in main.css.
+Natrium is using [Chroma](https://gohugo.io/content-management/syntax-highlighting/) and `pygmentsStyle = "native"` by default. If you would like to use another style you have to adjust the `pre colors` in main.css.
 
 ## License
 
