@@ -61,3 +61,5 @@ Natrium is using [Font Awesome](http://fontawesome.io) by Dave Gandy ([SIL OFL 1
 Other used fonts are [Merriweather](https://github.com/EbenSorkin/Merriweather) by Sorkin Type (Copyright 2016 The Merriweather Project, [SIL OFL 1.1](http://scripts.sil.org/OFL)), [Lato](http://www.latofonts.com/) by Łukasz Dziedzic (Copyright 2010-2014 by tyPoland Lukasz Dziedzic, [SIL OFL 1.1](http://scripts.sil.org/OFL)) and [Roboto Mono](https://github.com/google/roboto/) by Christian Robertson (Copyright 2015 Google Inc., [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)).
 
 Special thanks to [Artem Sidorenko](https://www.sidorenko.io/post/2017/07/nice-tagcloud-with-hugo/) (tag cloud).
+
+The example site is based on [hugoBasicExample](https://github.com/gohugoio/hugoBasicExample) (Copyright 2014 Steve Francia, [MIT License](https://github.com/gohugoio/hugoBasicExample/blob/master/LICENSE)).
