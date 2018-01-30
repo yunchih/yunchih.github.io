@@ -315,7 +315,7 @@ img {
 .tag-cloud-item a:hover,
 .tag-cloud-item a:focus,
 .tag-cloud-item a:active {
-   color: #4b4b4b;
+   color: #ccc;
 }
 
 .footer {
