@@ -411,7 +411,7 @@ img {
 
 .error-page-content a:hover,
 .error-page-content a:focus,
-.error-page-content a:acive {
+.error-page-content a:active {
   color: #ccc;
 }
 
@@ -516,5 +516,9 @@ img {
 
   .page-links {
     font-size: 19px;
+  }
+  
+  .error-page-title {
+    font-size: 200px;
   }
 }
