@@ -393,25 +393,25 @@ img {
   color: #ccc;
 }
 
-.404-title {
+.error-title {
   text-align: center;
   color: #222;
   font-size: 68px;
 }
 
-.404-content {
+.error-content {
   text-align: center;
 }
 
-.404-content a {
+.error-content a {
   text-decoration: none;
   color: inherit;
   transition: color 300ms ease;
 }
 
-.404-content a:hover,
-.404-content a:focus,
-.404-content a:acive {
+.error-content a:hover,
+.error-content a:focus,
+.error-content a:acive {
   color: #222;
 }
 
