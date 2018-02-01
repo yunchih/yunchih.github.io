@@ -393,6 +393,28 @@ img {
   color: #ccc;
 }
 
+.404-title {
+  text-align: center;
+  color: #222;
+  font-size: 68px;
+}
+
+.404-content {
+  text-align: center;
+}
+
+.404-content a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 300ms ease;
+}
+
+.404-content a:hover,
+.404-content a:focus,
+.404-content a:acive {
+  color: #222;
+}
+
 .fa {
   font-family: 'FontAwesome';
   font-style: normal;
@@ -400,6 +422,10 @@ img {
 
 .fa-rss::before {
   content: "\f09e";
+}
+
+.fa-chevron-up::before {
+  content: "\f077";
 }
 
 .fa-github::before {
