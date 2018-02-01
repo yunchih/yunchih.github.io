@@ -4,7 +4,7 @@ A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Lithium]
 
 ## Changes
 
-Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, syntax highlighting, better support for code, img and RSS, pagination, multiple design optimizations, i18n...
+Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, syntax highlighting, better support for code, img and RSS, pagination, multiple design optimizations, i18n, 404.html...
 
 ## History
 
