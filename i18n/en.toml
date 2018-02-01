@@ -9,3 +9,6 @@ other = "Categories"
 
 [tags]
 other = "Tags"
+
+[errorMessage]
+other = "Here is nothing."
