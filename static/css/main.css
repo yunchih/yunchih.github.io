@@ -396,7 +396,7 @@ img {
 .error-page-title {
   text-align: center;
   color: #222;
-  font-size: 136px;
+  font-size: 76px;
 }
 
 .error-page-content {
@@ -519,6 +519,6 @@ img {
   }
   
   .error-page-title {
-    font-size: 200px;
+    font-size: 114px;
   }
 }
