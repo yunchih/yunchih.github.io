@@ -393,26 +393,26 @@ img {
   color: #ccc;
 }
 
-.error-title {
+.error-page-title {
   text-align: center;
   color: #222;
-  font-size: 68px;
+  font-size: 136px;
 }
 
-.error-content {
+.error-page-content {
   text-align: center;
 }
 
-.error-content a {
+.error-page-content a {
   text-decoration: none;
   color: inherit;
   transition: color 300ms ease;
 }
 
-.error-content a:hover,
-.error-content a:focus,
-.error-content a:acive {
-  color: #222;
+.error-page-content a:hover,
+.error-page-content a:focus,
+.error-page-content a:acive {
+  color: #ccc;
 }
 
 .fa {
