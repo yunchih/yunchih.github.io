@@ -210,8 +210,7 @@ img {
 }
 
 .article-image-large:hover,
-.article-image-large:focus,
-.article-image-large:active {   
+.article-image-large:focus {   
   opacity: 0.5;  
 }
 
