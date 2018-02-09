@@ -62,4 +62,4 @@ Other used fonts are [Merriweather](https://github.com/EbenSorkin/Merriweather) 
 
 Special thanks to [Artem Sidorenko](https://www.sidorenko.io/post/2017/07/nice-tagcloud-with-hugo/) (tag cloud).
 
-The example site is based on [hugoBasicExample](https://github.com/gohugoio/hugoBasicExample) (Copyright © 2014 Steve Francia, [MIT License](https://github.com/gohugoio/hugoBasicExample/blob/master/LICENSE)).
+The content of the example site is generated with [Metamorphosum](http://metaphorpsum.com/) (Copyright © 2014 Kyle Stetz, [MIT License](https://github.com/kylestetz/metaphorpsum/blob/master/LICENSE.md)).
