@@ -150,15 +150,12 @@ img {
   margin: 15px 0 25px;
 }
 
-.article-content a {
+.article-content a,
+.article-content a:visited {
   text-decoration: none;
   color: inherit;
   border-bottom: medium solid #f0f0f0;
   transition: border-color 300ms ease;
-}
-
-.article-content a:visited {
-  border-bottom: medium solid #f0f0f0;
 }
 
 .article-content a:hover,
