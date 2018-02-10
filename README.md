@@ -2,7 +2,7 @@
 
 A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Lithium](https://github.com/jrutheiser/hugo-lithium-theme.git)
 
-<img source="https://github.com/mobybit/hugo-natrium-theme/blob/master/static/images/screenshot.png" alt="Screenshot">
+<img src="https://github.com/mobybit/hugo-natrium-theme/blob/master/static/images/screenshot.png" alt="Screenshot">
 
 ## Changes
 
