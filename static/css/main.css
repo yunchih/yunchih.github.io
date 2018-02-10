@@ -157,6 +157,10 @@ img {
   transition: border-color 300ms ease;
 }
 
+.article-content a:visited {
+  border-bottom: medium solid #f0f0f0;
+}
+
 .article-content a:hover,
 .article-content a:focus,
 .article-content a:active {
