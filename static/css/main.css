@@ -286,9 +286,8 @@ img {
 }
 
 .tag-cloud hr {
-  display: inline-block;
   width: 150px;
-  margin: 5px 0;  
+  margin: 10px 0;  
   height: 1px;
   border: none;
   background: #ddd;
