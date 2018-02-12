@@ -258,7 +258,9 @@ img {
   transition: color 600ms;
 }
 
-.list-item a:hover::after {
+.list-item a:hover::after,
+.list-item a:focus::after,
+.list-item a:active::after,{
   color: #d9d9d9;
 }
 
@@ -274,7 +276,7 @@ img {
 }
 
 .category-item a {
-  transition: color 500ms;
+  transition: color 300ms;
 }
 
 .category-item {
