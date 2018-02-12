@@ -408,7 +408,7 @@ img {
 .error-page-content a {
   text-decoration: none;
   color: inherit;
-  transition: color 150ms;
+  transition: color 600ms;
 }
 
 .error-page-content a:hover,
