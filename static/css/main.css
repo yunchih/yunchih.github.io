@@ -249,8 +249,9 @@ img {
 
 .list-item a::after { 
   font-family: 'FontAwesome';  
-  content: "\f101";
-  font-size: 17px;
+  content: "\f138";
+  font-size: 14px;
+  vertical-align: 5%;
   font-weight: initial;
   color: #303030;
   padding-left: 5px;
@@ -507,7 +508,8 @@ img {
   }
 
   .list-item a::after { 
-    font-size: 19px;
+    font-size: 15px;
+    vertical-align: 3%;
   }
 
   .list-item-date {  
