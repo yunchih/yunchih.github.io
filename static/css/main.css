@@ -267,6 +267,7 @@ img {
 .list-item a,
 .category-item a {
   display: inline-block; 
+  hyphens: none;
   padding: 5px 0;
   text-decoration: none;
   font-size: 19px;
