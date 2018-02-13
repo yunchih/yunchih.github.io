@@ -253,7 +253,7 @@ img {
   font-size: 14px;
   vertical-align: 5%;
   font-weight: initial;
-  color: #303030;
+  color: #d9d9d9;
   padding-left: 5px;
   transition: color 600ms;
 }
@@ -261,7 +261,7 @@ img {
 .list-item a:hover::after,
 .list-item a:focus::after,
 .list-item a:active::after {
-  color: #d9d9d9;
+  color: #303030;
 }
 
 .list-item a,
