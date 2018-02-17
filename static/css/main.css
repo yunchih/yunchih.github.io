@@ -247,12 +247,16 @@ img {
 
 .list-item a {
   display: inline-block;
-  white-space: nowrap;
-  overflow: hidden; 
+  box-sizing: border-box;
   hyphens: none;
+  webkit-hyphens: none;
+  width: 100%;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;   
   padding: 5px 0;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 17px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #303030; 
@@ -260,7 +264,7 @@ img {
 }
 
 .list-item a:hover {
-  transform: translate(10px);
+  transform: translate(20px);
 }
 
 .list-item a::before { 
@@ -269,7 +273,7 @@ img {
   float: left;
   font-family: 'FontAwesome';  
   content: "\f138";
-  font-size: 19px;    
+  font-size: 17px;    
 }
 
 .list-item a:hover::before,
@@ -513,6 +517,7 @@ img {
 
   .list-item a,
   .category-item a {
+    width: auto;
     font-size: 21px;
   }
 
