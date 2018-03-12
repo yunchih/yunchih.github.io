@@ -116,11 +116,13 @@ img {
 .nav-links a {
   text-decoration: none;
   color: #111;
+  border-bottom: 1px dashed #fff;
+  transition: border-color 300ms;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  color: #000;
+  border-color: #eaeaea;
 }
 
 .content {
