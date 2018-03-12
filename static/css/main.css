@@ -200,7 +200,7 @@ img {
 .article-taxonomy a:hover,
 .article-taxonomy a:focus,
 .article-taxonomy a:active {
-  color: #d9d9d9;
+  color: #ccc;
 }
 
 .article-image-large {
@@ -239,6 +239,7 @@ img {
 
 .list-item-date {
   display: block;
+  padding: 5px 0;
   font-family: 'Lato', sans-serif;
   color: #ccc;
   font-size: 14px;
@@ -252,14 +253,14 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;   
-  padding: 1px 0;
+  padding: 3px 0;
   text-decoration: none;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #222; 
   border-bottom: 1px solid #ddd;
-  transition: border-color 150ms;
+  transition: border-color 300ms;
 }
 
 .list-item a:hover,
@@ -276,13 +277,13 @@ img {
 
 .category-item a { 
   display: inline-block;
-  transition: color 300ms;
   padding: 5px 0;
   text-decoration: none;
   font-size: 19px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #222; 
+  transition: color 300ms;
 }
 
 .category-item-count {  
@@ -318,7 +319,7 @@ img {
 .category-item a:hover,
 .category-item a:focus,
 .category-item a:active {
-   color: #d9d9d9;
+   color: #ccc;
 }
 
 .footer {
@@ -346,7 +347,7 @@ img {
 .footer-links a {
   color: #888;
   text-decoration: none;
-  transition: color 150ms ease;
+  transition: color 300ms;
   margin: 0 5px;
 }
 
@@ -380,8 +381,8 @@ img {
 .page-links a {   
   text-decoration: none;
   padding: 0 5px;
-  transition: color 300ms;
   color: #555;
+  transition: color 300ms;
 }
 
 .page-links a:hover,
@@ -500,12 +501,12 @@ img {
   }
 
   .list-item a {
-    padding: 2px 0;
+    padding: 5px 0;
     font-size: 21px;
   }
 
   .list-item-date { 
-    padding: 3px 0; 
+    padding: 5px 0; 
     font-size: 17px;
     text-align: right;
     float: right;
