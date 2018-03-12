@@ -122,7 +122,7 @@ img {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  border-color: #eaeaea;
+  border-color: #ccc;
 }
 
 .content {
@@ -235,7 +235,7 @@ img {
 }
 
 .list-item {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
   padding: 0;
 }
 
