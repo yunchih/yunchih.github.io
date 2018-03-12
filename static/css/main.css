@@ -116,12 +116,11 @@ img {
 .nav-links a {
   text-decoration: none;
   color: #111;
-  border-bottom: 1px dashed #fff;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  text-shadow: 0 0;
+ text-shadow: 0 0 1px #ccc;
 }
 
 .content {
