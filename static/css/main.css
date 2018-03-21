@@ -24,16 +24,16 @@ h6 {
 pre,
 code {
   font-family: 'Roboto Mono', monospace;
-  font-size: 15px;    
+  font-size: 15px;
 }
 
 code {
   border-radius: 3px;
-  padding: 1px 3px;   
+  padding: 1px 3px;
   background: #f0f0f0;
   -webkit-hyphens: none;
-  hyphens: none; 
-} 
+  hyphens: none;
+}
 
 pre {
   overflow-x: auto;
@@ -49,7 +49,6 @@ pre code {
 }
 
 a {
-  outline: none;
   background-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -58,7 +57,7 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 blockquote {
@@ -131,6 +130,7 @@ blockquote {
 }
 
 .content {
+  display: block;
   min-height: calc(100vh - 60px);
   max-width: 700px;
   margin: 60px auto 80px;
@@ -214,18 +214,18 @@ blockquote {
   padding: 2px;
   border: solid 1px #e6e6e6;
   opacity: 1;
-  transition: opacity 1s;  
+  transition: opacity 1s;
 }
 
 .article-image-large:hover,
 .article-image-large:active,
-.article-image-large:focus {   
-  opacity: 0.5;  
+.article-image-large:focus {
+  opacity: 0.5;
 }
 
 .list,
 .category,
-.tag-cloud {  
+.tag-cloud {
   margin: 0;
   padding: 0;
   line-height: 1.3em;
@@ -256,16 +256,16 @@ blockquote {
   display: inline-block;
   box-sizing: border-box;
   width: auto;
-  max-width: 100%;  
+  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;   
+  text-overflow: ellipsis;
   padding: 3px 0;
   text-decoration: none;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: #222; 
+  color: #222;
   border-bottom: 1px solid #ddd;
   transition: border-color 300ms;
 }
@@ -282,18 +282,18 @@ blockquote {
   padding: 0;
 }
 
-.category-item a { 
+.category-item a {
   display: inline-block;
   padding: 5px 0;
   text-decoration: none;
   font-size: 19px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: #222; 
+  color: #222;
   transition: color 300ms;
 }
 
-.category-item-count {  
+.category-item-count {
   font-family: 'Lato', sans-serif;
   margin-right: 15px;
   color: #ccc;
@@ -301,22 +301,22 @@ blockquote {
   font-weight: bold;
 }
 
-.tag-cloud-item {  
-  margin: 0; 
-  padding: 0; 
+.tag-cloud-item {
+  margin: 0;
+  padding: 0;
 }
 
 .tag-cloud-item li {
   display: inline-block;
-  list-style: none;  
-  padding: 0 15px 15px 0;    
+  list-style: none;
+  padding: 0 15px 15px 0;
 }
 
-.tag-cloud-item a {  
+.tag-cloud-item a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: #222;  
+  color: #222;
   transition: color 300ms;
 }
 
@@ -385,7 +385,7 @@ blockquote {
   display: inline-block;
 }
 
-.page-links a {   
+.page-links a {
   text-decoration: none;
   padding: 0 5px;
   color: #555;
@@ -455,12 +455,12 @@ blockquote {
 
 @media (min-width: 600px) {
   code {
-    padding: 2px 4px;  
+    padding: 2px 4px;
   }
-  
+
   pre,
   code {
-    font-size: 17px;    
+    font-size: 17px;
   }
 
   .header {
@@ -512,16 +512,16 @@ blockquote {
     font-size: 21px;
   }
 
-  .list-item-date { 
-    padding: 5px 0; 
+  .list-item-date {
+    padding: 5px 0;
     font-size: 17px;
     text-align: right;
     float: right;
-  } 
-  
+  }
+
   .category-item {
      display: inline-block;
-  }  
+  }
 
   .category-item a {
      font-size: 21px;
@@ -538,7 +538,7 @@ blockquote {
   .page-links {
     font-size: 19px;
   }
-  
+
   .error-page-title {
     font-size: 114px;
   }
