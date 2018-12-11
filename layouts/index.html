@@ -1,17 +1,20 @@
 {{ partial "header.html" . }}
 
 <main class="content">
+  <div class="intro list-item">
+    <a href="{{ .Site.BaseURL }}/about/">Who am I ?</a>
+  </div>
 
   <div class="list">
-     {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}    
+     {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}
   <h2 class="list-title">{{ .Key }}</h2>
     {{ range .Pages }}
-    
+
     {{ partial "list-item.html" . }}
 
     {{ end }}
     {{ end }}
-  </div>  
+  </div>
 
   {{ partial "pagination.html" . }}
 
