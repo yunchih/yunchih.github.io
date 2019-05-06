@@ -5,6 +5,7 @@
     <a href="{{ .Site.BaseURL }}/about/">Who am I ?</a>
   </div>
 
+  {{if gt (len .Data.Pages) 1}}
   <div class="list">
      {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}
   <h2 class="list-title">{{ .Key }}</h2>
@@ -15,6 +16,7 @@
     {{ end }}
     {{ end }}
   </div>
+  {{ end }}
 
   {{ partial "pagination.html" . }}
 
