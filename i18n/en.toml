@@ -11,4 +11,4 @@ other = "Categories"
 other = "Tags"
 
 [errorMessage]
-other = "Here is nothing."
+other = "Page not found."

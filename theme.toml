@@ -1,17 +1,15 @@
 name = "Natrium"
 license = "MIT"
-licenselink = "https://github.com/mobybit/hugo-natrium-theme/blob/master/LICENSE.md"
-description = "Natrium minimal theme"
-homepage = "https://github.com/mobybit/hugo-natrium-theme"
+licenselink = "https://github.com/hugcis/natrium-custom/blob/master/LICENSE.md"
+description = "Another minimal theme"
+homepage = "https://github.com/hugcis/natrium-custom"
 tags = ["blog", "minimal", "personal", "responsive"]
 features = ["blog", "taxonomies", "privacy"]
 min_version = 0.25
 
 [author]
+
+[original]
   name = "Tim Krieger"
   homepage = "https://blog.mobybit.de"
-  
-[original]
-  name = "Jonathan Rutheiser"
-  homepage = "http://jrutheiser.com/"
-  repo = "https://github.com/jrutheiser/hugo-lithium-theme"
+  repo = "https://github.com/mobybit/hugo-natrium-theme"

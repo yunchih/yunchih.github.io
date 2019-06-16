@@ -1,14 +1,7 @@
-# Hugo Natrium
+# Hugo Another Minimalist Theme
 
-A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Lithium](https://github.com/jrutheiser/hugo-lithium-theme.git)
-
-## Changes
-
-Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, syntax highlighting, better support for code, img and RSS, pagination, multiple design optimizations, i18n, 404.html...
-
-## History
-
-I learned a lot while playing with the code from Lithium. I'm an absolutly beginner. Please report any issue you recognize.
+A simple responsive blog theme for [Hugo](https://gohugo.io/) based on 
+[Natrium](https://github.com/mobybit/hugo-natrium-theme)
 
 ## Features
 
