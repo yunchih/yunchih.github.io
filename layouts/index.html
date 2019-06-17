@@ -1,12 +1,10 @@
 {{ partial "header.html" . }}
 
 <main class="content">
-  <div class="intro list-item">
-    <a href="{{ .Site.BaseURL }}/about/">Who am I ?</a>
-  </div>
 
   {{if gt (len .Data.Pages) 1}}
   <div class="list">
+    <h1>Posts</h1>
      {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}
   <h2 class="list-title">{{ .Key }}</h2>
     {{ range .Pages }}
@@ -19,6 +17,11 @@
   {{ end }}
 
   {{ partial "pagination.html" . }}
+
+  <hr>
+  <div class="intro list-item">
+      <a href="{{ .Site.BaseURL }}/about/">Who am I ?</a>
+  </div>
 
 </main>
 

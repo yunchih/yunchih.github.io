@@ -8,6 +8,7 @@ features = ["blog", "taxonomies", "privacy"]
 min_version = 0.25
 
 [author]
+  name = "Hugo Cisneros"
 
 [original]
   name = "Tim Krieger"
