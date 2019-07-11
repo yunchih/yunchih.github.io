@@ -1,6 +1,6 @@
-    <nav class="list-item">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <span class="list-item-date">
+    <nav class="list-item" itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="{{ .Permalink }}" itemprop="name">{{ .Title }}</a>
+      <span class="list-item-date" itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
         {{ .Date.Format "2006-01-02" }}
       </span>
     </nav>
