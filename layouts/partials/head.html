@@ -23,8 +23,10 @@
 <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
 {{ end }}
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" media="all">
+{{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" media="all">
 
+{{ if .Params.MathJax }}
 <!-- Mathjax congiguration -->
 <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -36,3 +38,4 @@
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+{{ end }}
