@@ -1,37 +1,63 @@
 {{ partial "header.html" . }}
 
-<main class="content">
+<main class="content" role="main">
+    <div class="head">
+        <div class="picture">
+            <img class="main-image" alt="Main picture" src={{ .Params.Imgname }}></img>
+        </div>
+        <div class="contact-info">
+            <div itemscope itemtype="http://schema.org/Person">
+                <h1 itemprop="name">{{ .Params.Name }}</h1>
+                <h3 itemprop="jobTitle">{{ .Params.Personal_title }}</h3>
+                    {{range .Params.Address }}
+                    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">
+                        {{ .name }}
+                        <br>
+                        {{ .street }}
+                    </span>
+                    <br>
+                    <span itemprop="postalCode">{{ .postal_code }}</span>
+                    <span itemprop="addressLocality">{{ .locality }}</span>
+                    <br>
+                    {{ with .email }}
+                    <img class="email" alt="email" src="{{ . }}"></img>
+                    {{ end }}
+                    <br>
+                    </div>
+                    {{ end }}
+            </div>
+        </div>
+    </div>
 
-  <div itemscope itemtype="http://schema.org/Blog">
-    {{if gt (len .Data.Pages) 1}}
+    {{ .Content }}
 
-    <!-- Navigate pages by the corresponding section -->
-    {{ range (where (.Pages.GroupBy "Section") "Key" "!=" "") }}
-        {{ with $.Site.GetPage "section" .Key }}
-        <h2>{{.Title}}</h2>
-        {{ else }}
-        <h2>{{ .Key | title }}</h2>
-        {{ end }}
-        <!-- Navigate pages by date -->
-        {{ range (where .Pages "Section" .Key).GroupByDate "2006" }}
-        <h3>{{ .Key }}</h3>
-            {{ range .Pages }}
-                {{ partial "list-item.html" . }}
+    {{ with .Params.Publications }}
+    <h2>Publications</h2>
+    {{ end }}
+    {{ range .Params.Publications }}
+    <div class="pub-wrapper" >
+        <div class="pub-image">
+            <img alt="{{ .title }} paper illustration" src="{{ .image }}"/>
+        </div>
+        <div class="publication" itemscope itemtype="http://schema.org/ScholarlyArticle">
+            <b><span itemprop="author">{{- .me -}}</span></b>,
+            {{ range .authors }}
+            <span itemprop="author">{{- . -}}</span>
             {{ end }}
-        {{ end }}
-
+            <br>
+            <span itemprop="name">
+                <b>{{ .title }}</b>
+            </span>
+            <br>
+            In <i>{{- .journal -}}</i>, <meta itemprop="datePublished" content="{{- .date -}}">{{- .date -}}.
+            <br>
+            {{ range .links }}
+            [<a href="{{ .url }}">{{ .name }}</a>]
+            {{ end }}
+        </div>
+    </div>
     {{ end }}
-    {{ end }}
-
-    {{ partial "pagination.html" . }}
-
-  </div>
-
-  <hr>
-  <div class="intro list-item">
-      <a href="{{ .Site.BaseURL }}/about/">Who am I ?</a>
-  </div>
-
 </main>
 
 {{ partial "footer.html" . }}

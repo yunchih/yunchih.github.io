@@ -3,7 +3,7 @@
 {{ hugo.Generator }}
 
 {{ if eq .RelPermalink "/" }}
-<title>{{ .Title }}</title>
+<title>{{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:type" content="website">
 {{ else }}
