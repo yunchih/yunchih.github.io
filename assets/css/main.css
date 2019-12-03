@@ -437,6 +437,7 @@ blockquote {
   overflow: hidden;
   border: none;
   background: #e8e8e8;
+  margin: 20px;
 }
 
 .head {
@@ -508,7 +509,7 @@ blockquote {
   }
 
   .article-title {
-    font-size: 42px;
+    font-size: 30px;
   }
 
   .article-date {

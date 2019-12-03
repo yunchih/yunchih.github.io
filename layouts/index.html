@@ -36,11 +36,11 @@
     <h2>Publications</h2>
     {{ end }}
     {{ range .Params.Publications }}
-    <div class="pub-wrapper" >
-        <div class="pub-image">
-            <img alt="{{ .title }} paper illustration" src="{{ .image }}"/>
+    <div class="pub-wrapper" itemscope itemtype="http://schema.org/ScholarlyArticle">
+        <div class="pub-image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <img alt="{{ .title }} paper illustration" itemprop="url" src="{{ .image }}"/>
         </div>
-        <div class="publication" itemscope itemtype="http://schema.org/ScholarlyArticle">
+        <div class="publication">
             <b><span itemprop="author">{{- .me -}}</span></b>,
             {{ range .authors }}
             <span itemprop="author">{{- . -}}</span>
@@ -50,14 +50,16 @@
                 <b>{{ .title }}</b>
             </span>
             <br>
-            In <i>{{- .journal -}}</i>, <meta itemprop="datePublished" content="{{- .date -}}">{{- .date -}}.
+            In <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><i itemprop="name">{{- .journal -}}</i></span>, <meta itemprop="datePublished" content="{{- .date -}}">{{- .date -}}.
             <br>
-            {{ range .links }}
-            [<a href="{{ .url }}">{{ .name }}</a>]
-            {{ end }}
+            {{- range .links -}}
+            [<a itemprop="mainEntityOfPage" href="{{ .url }}">{{ .name }}</a>]
+            {{- end }}
         </div>
     </div>
     {{ end }}
+
+    <hr>
 </main>
 
 {{ partial "footer.html" . }}

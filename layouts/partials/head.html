@@ -2,22 +2,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ hugo.Generator }}
 
-{{ if eq .RelPermalink "/" }}
+{{- if eq .RelPermalink "/" -}}
 <title>{{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:type" content="website">
-{{ else }}
+{{- else -}}
 <title>{{ .Title }} - {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-{{ end }}
+{{- end -}}
 
 {{ if eq .RelPermalink "/" }}
 <meta name="Description" property="description" content="{{ .Site.Params.description }}">
-{{ else }}
-{{ if .Description }}
+{{- else -}}
+{{- if .Description -}}
 <meta name="Description" property="description" content="{{ .Description }}">
-{{ end }}
-{{ end }}
+{{- end -}}
+{{- end -}}
 
 {{ if .Keywords }}
 <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
@@ -26,7 +26,7 @@
 {{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" media="all">
 
-{{ if .Params.MathJax }}
+{{- if .Params.MathJax -}}
 <!-- Mathjax congiguration -->
 <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -38,7 +38,7 @@
 <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
-{{ end }}
+{{- end -}}
 
 <!-- Icon configuration -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
