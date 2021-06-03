@@ -1,50 +1,65 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ hugo.Generator }}
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1">
 {{- if eq .RelPermalink "/" -}}
 <title>{{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Title }}">
-<meta property="og:type" content="website">
-{{- else -}}
+<meta property="og:title" content="{{ .Site.Title }}">
+{{- else if .Title -}}
 <title>{{ .Title }} - {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+{{- else -}}
+<title>{{ .Section | humanize }} - {{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Section | humanize  }} - {{ .Site.Title }}">
 {{- end -}}
-
+{{ if .IsPage }}
+<meta property="og:type" content="article">
+{{ else }}
+<meta property="og:type" content="website">
+{{ end }}
+{{ if .Params.Imgname }}
+<meta property="og:image" content="{{ .Params.Imgname.Name }}">
+{{ else if .Params.Caption }}
+<meta property="og:image" content="{{ .Params.Caption.Name }}">
+{{ else }}
+<meta property="og:image" content="{{ .Site.Params.Imgname.name }}">
+{{ end }}
+<meta property="og:url" content="{{ .Permalink }}">
 {{ if eq .RelPermalink "/" }}
+<meta property="og:description" content="{{ .Site.Params.description }}">
 <meta name="Description" property="description" content="{{ .Site.Params.description }}">
 {{- else -}}
 {{- if .Description -}}
+<meta property="og:description" content="{{ .Description }}">
 <meta name="Description" property="description" content="{{ .Description }}">
+{{- else if and (eq .Type "notes") (ne .Kind "section") }}
+{{ $description := printf "%s %s" "Notes about " (strings.TrimPrefix "Notes on: " .Title) }}
+<meta property="og:description" content="{{ $description }}">
+<meta name="Description" property="description" content="{{ $description }}">
 {{- end -}}
 {{- end -}}
-
-{{ if .Keywords }}
-<meta property="keywords" content ="{{ delimit .Keywords ", " }}">
+{{ if .Site.Params.Twitter.Name }}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{ .Site.Params.Twitter.Name }}">
+<meta name="twitter:creator" content="{{ .Site.Params.Twitter.Name }}">
 {{ end }}
-
-{{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}" media="all">
-
-{{- if .Params.MathJax -}}
-<!-- Mathjax congiguration -->
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({
-     jax: ["input/TeX", "output/CommonHTML"],
-     tex2jax: {inlineMath: [['$','$']]},
- });
-
-</script>
-<script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+{{- if .Keywords -}}
+<meta property="keywords" content ="{{ delimit .Keywords ", " }}">
 {{- end -}}
-
+{{- if .Params.Tags -}}
+<meta property="keywords" content ="{{ delimit .Params.Tags ", " }}">
+{{- end -}}
+<!-- Style configuration -->
+{{ $style := resources.Get "css/main.css" | resources.Minify}}
+<link rel="stylesheet" href="{{ $style.Permalink }}" media="all" type="text/css">
+{{- if .Params.D3Notes -}}
+{{ $styleSearch := resources.Get "css/search-bar.css" | resources.Minify}}
+<link rel="stylesheet" href="{{ $styleSearch.Permalink }}" media="all" type="text/css">
+{{- end -}}
 <!-- Icon configuration -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<link rel="webmention" href="https://webmention.io/hugocisneros.com/webmention">
+<link rel="pingback" href="https://webmention.io/hugocisneros.com/xmlrpc">

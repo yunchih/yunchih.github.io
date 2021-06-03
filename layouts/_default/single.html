@@ -1,30 +1,65 @@
 {{ partial "header.html" . }}
 
 <main class="content" role="main">
-  <article class="article">
-    <h1 class="article-title">{{ .Title }}</h1>
-    {{ if (and (in "posttips" .Section) (not (eq .Section ""))) }}
-    <span class="article-date">{{ .Date.Format "2006-01-02" }}</span>
+    <article class="article" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+    <h1 class="article-title" itemprop="name">{{ .Title }}</h1>
+    {{ if .Params.Headline }}<b><i itemprop="headline" class="article-headline">{{ .Params.Headline }}</i></b>{{ end }}
+    <div class="article-subtitle">
+    <span class="article-date" itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "2006-01-02" }}</span>
+    <span class="article-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Hugo Cisneros</span></span>
+    </div>
+    {{ if .Params.Readingtime }}
+    <div>
+        Reading time: {{ math.Round (div (countwords .Content) 220.0) }} minutes.
+    </div>
     {{ end }}
+    </div>
 
-    <div class="article-content">
+    <div class="article-content" itemprop="articleBody">
       {{ .Content }}
     </div>
 
+    {{ if (or (.Params.categories) (.Params.tags)) }}
     <ul class="article-taxonomy">
       {{ if .Params.categories }}
       <hr>
       <li>
-        <i class="fa fa-category"></i>{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}{{ end }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+        {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}{{ end }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
       </li>
       {{ end }}
 
       {{ if .Params.tags }}
       <li>
-        <i class="fa fa-tags"></i>{{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }}{{ end }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+          {{ range $index, $tag := .Params.tags }}
+          <a  href="{{ "tags/" | relURL }}{{ . | urlize }}">
+              <span class="tag-item">
+                  <img class="tag-logo" src="/img/tag.svg" alt="Logo of a tag: indicates that a tag item follows.">{{ . }}
+              </span>
+          </a>
+          {{ end }}
       </li>
       {{ end }}
-  </article>
+    </ul>
+    {{ end }}
+
+    {{ if .Params.references }}
+    <hr>
+    <div class="references" >
+        <h3>References</h3>
+        <div class="references-list" >
+        <ol>
+            {{ range $elem_index, $elem_val := .Params.references }}
+            <li id="{{ $elem_val.id }}"><b>{{$elem_val.authors}}</b>. {{$elem_val.text}}</li>
+            {{ end }}
+        </ol>
+        </div>
+    </div>
+    {{ end }}
+    <div class="article-date-modified">
+        Last modified <span itemprop="dateModified" content="{{ .Lastmod.Format  "2006-01-02T15:04:05Z0700" }}">{{ .Lastmod.Format "2006-01-02"  }}</span>
+    </div>
+    </article>
 
 </main>
 

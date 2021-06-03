@@ -1,18 +1,13 @@
       <footer class="footer">
-        <ul class="footer-links">
-            <li>
-                <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> {{ i18n "footerRSS" }}</a>
-          </li>
-          <li>
-            <a href="https://github.com/hugcis/natrium-custom"><i class="fa fa-github"></i> Code</a>
-          </li>
-          <!-- <li>
-               <a href="{{ .Site.BaseURL }}site-notice">{{ i18n "siteNotice" }}</a>
-               </li>
-               </ul> -->
+          <ul class="footer-links">
+            {{ if isset .Site.Params "blogrss" }}
+            <li><a class="rss-link" href="{{ "/blog/index.xml" }}" type="application/rss+xml" target="_blank">{{ i18n "footerRSS" }} <img class="rss-icon" src="/img/RSS.svg" alt="RSS feed icon"></a></li>
+          {{ end }}
+          <li><a href="https://github.com/hugcis/natrium-custom">Code</a></li>
+          <li>© Hugo Cisneros {{ now.Format "2006" }}</li>
+        </ul>
       </footer>
-
     </div>
-
+  {{ partial "extra_js.html" . }}
   </body>
 </html>

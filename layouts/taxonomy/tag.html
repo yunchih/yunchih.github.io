@@ -2,17 +2,26 @@
 
 <main class="content" role="main">
 
+    <br>
+    <a href="/tags/"><b>&#8592; Browse all tags</b></a>
   <div class="list">
-    <h2 class="list-title">{{ .Title }}</h2>
-    {{ range .Paginator.Pages }}
-     
-    {{ partial "list-item.html" . }}
+      <h2 class="list-title">{{ .Title }}</h2>
+      {{ range .RegularPages }}
+      {{ if (or (eq .Type "projects") (eq .Type "blog")) }}
+      {{ partial "list-item.html" . }}
+      {{ end }}
+      {{ end }}
+  </div>
 
-    {{ end }}
-   </div>
-
-  {{ partial "pagination.html" . }}
-
+  {{ $notes := where .RegularPages ".Type" "notes" }}
+  {{ if $notes }}
+  <h2 class="list-title">Notes</h2>
+  {{ range $notes }}
+  {{ partial "note_title.html" . }}
+  <hr>
+  {{ end }}
+  {{ end }}
+  <br>
 </main>
 
 {{ partial "footer.html" . }}
