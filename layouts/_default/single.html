@@ -7,7 +7,7 @@
     {{ if .Params.Headline }}<b><i itemprop="headline" class="article-headline">{{ .Params.Headline }}</i></b>{{ end }}
     <div class="article-subtitle">
     <span class="article-date" itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "2006-01-02" }}</span>
-    <span class="article-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Hugo Cisneros</span></span>
+    <span class="article-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ $.Site.Params.authorName }}</span></span>
     </div>
     {{ if .Params.Readingtime }}
     <div>
