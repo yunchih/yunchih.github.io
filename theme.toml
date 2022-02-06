@@ -1,7 +1,7 @@
-name = "Natrium"
+name = "Astatine"
 license = "MIT"
 licenselink = "https://github.com/hugcis/natrium-custom/blob/master/LICENSE.md"
-description = "Another minimal theme"
+description = "Another minimal theme - for academics"
 homepage = "https://github.com/hugcis/natrium-custom"
 tags = ["blog", "minimal", "personal", "responsive"]
 features = ["blog", "taxonomies", "privacy"]
