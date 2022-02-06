@@ -1,3 +1,9 @@
+:root {
+  --main-bg-color-light: brown;
+  --light-gray: #ccc;
+  --main-bg-dark: #333;
+}
+
 html,
 body {
     margin: 0;
@@ -33,7 +39,7 @@ h1,h2 {
 
 
 code {
-    font-size: 15px;
+    font-size: 1.0em;
     border-radius: 3px;
     padding: 1px 3px;
     background: #f0f0f0;
@@ -47,13 +53,14 @@ pre {
     border-radius: 3px;
     background: #202020;
     color: #d0d0d0;
-    line-height: 1.1em;
+    line-height: 1.4em;
 }
 
 pre code {
-    font-size: 12px;
+    font-size: 0.9em;
     padding: initial;
     background: transparent;
+    font-feature-settings:"tnum","case","calt","zero","ss01","locl";
 }
 
 a:hover,
@@ -100,17 +107,16 @@ div.center {
 
 .post-image {
     grid-column: 1 / span 1;
-    width: 100%;
-    /* height: 100%; */
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 90%;
+    max-height: 100px;
+    width: auto;
     margin: 3px 10px;
 }
 
 .project-title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 0 100%;
+    align-items:center;
     border-bottom: 1px solid #ddd;
 }
 
@@ -120,7 +126,7 @@ a.post-title {
     border-bottom: 1px dotted #ddd;
 }
 
-.post-title h3 {
+.post-title h2 {
     margin: 0;
 }
 
@@ -138,7 +144,7 @@ a.post-title {
 }
 
 blockquote:before {
-    color: #ccc;
+    color: var(--light-gray);
     content: open-quote;
     font-size: 3em;
     line-height: 0.1em;
@@ -147,7 +153,7 @@ blockquote:before {
 }
 
 blockquote:after {
-    color: #ccc;
+    color: var(--light-gray);
     content: close-quote;
     font-size: 3em;
     line-height: 0.1em;
@@ -157,7 +163,7 @@ blockquote:after {
 
 blockquote {
     font-family: serif,-apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    border-left: 5px solid #ccc;
+    border-left: 5px solid var(--light-gray);
     background: #f5f5f5;
     margin: 20px;
     padding-left: 10px;
@@ -197,8 +203,6 @@ blockquote p {
 .nav-links li {
     padding: 10px;
     margin: 0.1em;
-    border: solid 1px;
-    border-radius: 5px;
 }
 
 .nav-title {
@@ -209,6 +213,7 @@ blockquote p {
     text-decoration: none;
     color: #444;
 }
+
 
 .nav-title:hover,
 .nav-links li:hover {
@@ -234,6 +239,7 @@ blockquote p {
     display: inline-block;
     padding-left: 10px;
 }
+
 
 .nav-links a {
     text-decoration: none;
@@ -288,7 +294,7 @@ blockquote p {
 .content a:hover,
 .content a:active {
     color: #111;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid var(--light-gray);
     border-color: #606060;
 }
 
@@ -399,7 +405,7 @@ a.article-author:active {
 
 .category-item-count {
     margin-right: 15px;
-    color: #ccc;
+    color: var(--light-gray);
     font-size: 14px;
     font-weight: bold;
 }
@@ -426,7 +432,7 @@ a.article-author:active {
 .tag-cloud-item a:active,
 .category-item a:hover,
 .category-item a:active {
-    color: #ccc;
+    color: var(--light-gray);
 }
 
 .tag-item {
@@ -809,17 +815,12 @@ th {
     cursor: pointer;
 }
 
+.biblio-list {
+    padding-left: 20px;
+}
+
 
 @media (min-width: 600px) {
-    code {
-        padding: 2px 4px;
-    }
-
-    pre,
-    code {
-        font-size: 17px;
-    }
-
     .nav-title {
         font-size: 20px;
         padding: 10px 0;
@@ -828,11 +829,6 @@ th {
     .nav-links {
         font-size: 16px;
         padding: 0;
-    }
-
-    .nav-title,
-    .nav-links li {
-        border: none;
     }
 
     .nav-links li:first-child {
@@ -857,9 +853,9 @@ th {
     .article-date {
         font-size: 19px;
     }
-
-    .article-taxonomy {
-        font-size: 17px;
+    .project-title {
+        grid-gap: 0 15px;
+        grid-template-columns: 15% 85%;
     }
 
     .list-title,
@@ -920,7 +916,7 @@ th {
     .article-taxonomy,
     .nav-title,
     .nav-links li a {
-        color: #ccc;
+        color: var(--light-gray);
     }
 
     a.article-date,
@@ -932,7 +928,7 @@ th {
 
     body,
     .modal-window div{
-        background: #333;
+        background: var(--main-bg-dark);
     }
     blockquote,
     .tag-item {
@@ -940,7 +936,7 @@ th {
     }
     .content,
     .list-item-date {
-        color: #ccc;
+        color: var(--light-gray);
     }
 
     .article-content a,
@@ -957,7 +953,7 @@ th {
         border-color: #666;
     }
     code {
-        background: #333;
+        background: #111;
     }
     #base_rect {
         fill: #3c3c3c;
@@ -973,7 +969,7 @@ th {
         background-color: #f2f2f2;
     }
     #search_input {
-        background-color: #333;
+        background-color: var(--main-bg-dark);
     }
     .publication-link {
         background-color: #383275;
@@ -981,6 +977,10 @@ th {
     .article-content hr,
     .content hr {
         border-top: 1px dotted #555;
+    }
+
+    .isso-postbox > .form-wrapper .textarea, .isso-postbox > .form-wrapper .preview {
+        background-color: #444;
     }
 }
 
