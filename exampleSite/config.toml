@@ -1,12 +1,13 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Natrium Theme"
-theme = "hugo-natrium-theme"
+theme = "natrium-custom"
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
 pygmentsCodefences = true
 pygmentsStyle = "native"
+
 
 [taxonomies]
     category = "categories"  
@@ -33,6 +34,10 @@ pygmentsStyle = "native"
 
 [params]
     description = ""
+    authorName = "Jack Harkness"
+    [params.imgname]
+        name = "/img/main.jpg"
+        alt = "Profile picture"
 
     [params.logo]
     url = "logo.png"
