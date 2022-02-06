@@ -20,7 +20,7 @@
 {{ else if .Params.Caption }}
 <meta property="og:image" content="{{ .Params.Caption.Name }}">
 {{ else }}
-<meta property="og:image" content="{{ .Site.Params.Imgname.name }}">
+<meta property="og:image" content="{{ .Site.Params.imgname.name }}">
 {{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
 {{ if eq .RelPermalink "/" }}
@@ -45,7 +45,7 @@
 <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
 {{- end -}}
 {{- if .Params.Tags -}}
-<meta property="keywords" content ="{{ delimit .Params.Tags ", " }}">
+<meta property="keywords" content ="{{ delimit (apply .Params.Tags "lower" ".") ", " }}">
 {{- end -}}
 <!-- Style configuration -->
 {{ $style := resources.Get "css/main.css" | resources.Minify}}

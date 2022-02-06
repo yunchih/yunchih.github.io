@@ -9,8 +9,8 @@
                 <source srcset="{{ .name }}"{{ if .type }} type="{{ .type }}"{{ end }}>
                 {{ end }}
                 {{ end }}
-                <source srcset="{{ .Params.Imgname.Name }}"{{ if .Params.Imgname.Type }} type="{{ .Params.Imgname.Type }}"{{ end }}>
-                <img class="main-image u-photo" itemprop="contentUrl" alt="Main picture" src="{{ .Params.Imgname.Name }}" style="width: 80%;">
+                <source srcset="{{ .Site.Params.imgname.Name }}"{{ if .Site.Params.imgname.Type }} type="{{ .Site.Params.Imgname.Type }}"{{ end }}>
+                <img class="main-image u-photo" itemprop="contentUrl" alt="Main picture" src="{{ .Site.Params.imgname.Name }}" style="width: 80%;">
             </picture>
         </div>
         <div class="contact-info">
@@ -32,10 +32,11 @@
                 <picture>
                     {{ if .dark }}
                     <source srcset="{{ .dark }}" class="email"
+                            alt="Email screenshot"
                             media="(prefers-color-scheme: dark)">
                     {{ end }}
                     {{ if .light }}
-                    <img class="email" src="{{ .light }}">
+                    <img class="email" src="{{ .light }}" alt="Email screenshot">
                     {{ end }}
                 </picture>
                 {{ end }}
@@ -48,7 +49,7 @@
     {{ .Content }}
 
     {{ with .Params.Publications }}
-    <h2>Publications</h2>
+    <h2 id="publications">Publications</h2>
     {{ end }}
     {{ range .Params.Publications }}
     <div class="pub-wrapper" id="{{anchorize .title}}" itemscope itemtype="http://schema.org/ScholarlyArticle">
@@ -61,11 +62,9 @@
             <span itemprop="author">{{- . -}}</span>
             {{ end }}
             <br>
-            <span itemprop="name">
-                <b>{{ .title }}</b>
-            </span>
+            <b><a href="{{ .pdf }}"> <span itemprop="name"> {{ .title }} </span>
+                </a></b>
             <meta itemprop="headline" content="{{ .title }}"/>
-            <meta itemprop="dateModified" content="2019-11-04"/>
             <br>
             {{ if .journal }}
             <div>
