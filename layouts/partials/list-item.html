@@ -1,0 +1,15 @@
+    <div class="list-item" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="blog-box">
+                {{ if .Params.Caption }}
+                <img itemprop="image" alt="{{ .Params.Caption.Alt }}" src="{{ .Params.Caption.Name }}" class="post-image">
+                {{ else if .Params.Imgname }}
+                <img itemprop="image" alt="{{ .Params.Imgname.Alt }}" src="{{ .Params.Imgname.Name }}" class="post-image">
+                {{ end }}
+                <a href="{{ .Permalink }}" itemprop="url" class="post-title"><h3 itemprop="name">{{ .Title }}</h3></a>
+
+                <span class="list-item-date" itemprop="datePublished" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">
+                {{ .Date.Format "02/01/2006" }}
+            </span>
+            <meta itemprop="author" content="Hugo Cisneros">
+        </div>
+    </div>
