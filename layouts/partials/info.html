@@ -1,0 +1,48 @@
+<div class="head" itemscope itemtype="http://schema.org/Person">
+    <div class="picture" itemscope itemtype="http://schema.org/ImageObject">
+        <picture>
+            {{ if .Params.ImgOther }}
+            {{ range .Params.ImgOther }}
+            <source srcset="{{ .name }}"{{ if .type }} type="{{ .type }}"{{ end }}>
+            {{ end }}
+            {{ end }}
+            <source srcset="{{ .Site.Params.imgname.Name }}"{{ if .Site.Params.imgname.Type }} type="{{ .Site.Params.Imgname.Type }}"{{ end }}>
+            <img class="main-image u-photo" itemprop="contentUrl" alt="Main picture" src="{{ .Site.Params.imgname.Name }}" style="width: 80%;">
+        </picture>
+    </div>
+    <div class="contact-info">
+        <a  class="u-url" rel="me" itemprop="url" href="{{ .Permalink }}"><h1 class="p-name" itemprop="name">{{ .Params.Name }}</h1></a>
+        {{ if .Params.sameas }}
+        {{ range .Params.sameas }}
+        <link href="{{ . }}" rel="me" itemprop="sameAs">
+        {{ end }}
+        {{ end }}
+        <h3 itemprop="jobTitle">{{ .Params.Personal_title }}</h3>
+            {{range .Params.Address }}
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">
+                {{ .name }}
+                <br>
+                {{ .street }}
+            </span>
+            <br>
+            {{ with .postal_code }} <span itemprop="postalCode">{{ . }}</span>{{ end }}
+            {{ with .locality }} <span itemprop="addressLocality">{{ . }}</span>{{ end }}
+            <br>
+            {{ with .email }}
+            <picture>
+                {{ if .dark }}
+                <source srcset="{{ .dark }}" class="email"
+                        alt="Email screenshot"
+                        media="(prefers-color-scheme: dark)">
+                {{ end }}
+                {{ if .light }}
+                <img class="email" src="{{ .light }}" alt="Email screenshot">
+                {{ end }}
+            </picture>
+            {{ end }}
+            <br>
+            </div>
+            {{ end }}
+    </div>
+</div>

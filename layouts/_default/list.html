@@ -2,6 +2,9 @@
 
 <main class="content" role="main">
     {{.Content}}
+    {{ range .Pages }}
+    {{ partial "list-item.html" . }}
+    {{ end }}
 </main>
 
 {{ partial "footer.html" . }}

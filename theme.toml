@@ -9,6 +9,7 @@ min_version = 0.25
 
 [author]
   name = "Hugo Cisneros"
+  homepage = "https://hugocisneros.com"
 
 [original]
   name = "Tim Krieger"

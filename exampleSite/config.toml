@@ -1,7 +1,7 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Natrium Theme"
-theme = "natrium-custom"
+title = "Astatine Theme"
+theme = "hugo-astatine-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
@@ -44,3 +44,7 @@ pygmentsStyle = "native"
     width = 50
     height = 50
     alt = "Logo"
+
+
+[sitemap]
+  filename = "sitemap.xml"
