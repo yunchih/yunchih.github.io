@@ -18,6 +18,11 @@ pygmentsStyle = "native"
     page = "/:slug/"
 
 [[menu.main]]
+    name = "Posts"
+    url = "/post/"
+    weight = -150
+
+[[menu.main]]
     name = "About"
     url = "/about/"
     weight = -110
@@ -33,7 +38,7 @@ pygmentsStyle = "native"
     weight = -130
 
 [params]
-    description = ""
+    description = "The homepage of Astatine"
     authorName = "Jack Harkness"
     [params.imgname]
         name = "/img/main.jpg"
