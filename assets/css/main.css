@@ -3,6 +3,8 @@
   --main-bg-dark: #333;
   --dark-link #000;
   --headline-light: #222;
+  --dark-link-color: #9fcdfc;
+  --light-link-color: #005CAF;
 }
 
 html,
@@ -290,7 +292,7 @@ blockquote p {
 .article-content a,
 .content a {
     text-decoration: none;
-    color: #005CAF;
+    color: var(--light-link-color);
     transition: all 200ms;
 }
 
@@ -506,9 +508,8 @@ a.article-author:active {
 }
 
 .main-image {
-    float: left;
-    width: 80%;
-    margin: 20px;
+    width: 70%;
+    padding: 20px;
 }
 
 .intro {
@@ -614,56 +615,6 @@ a.article-author:active {
     margin: 10px 0;
 }
 
-.single-note {
-    width: 100%;
-    border-radius: 7px;
-    margin: 5px auto;
-    padding: 10px 10px;
-    background-color: #fafafa;
-    border-color: #ddd;
-    border-width: 1px;
-    place-self: center stretch;
-    box-sizing: border-box;
-}
-
-li.note-button {
-    list-style-type: none;
-    height: 100%;
-    width: 95%;
-}
-
-a.single-note {
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    transition: all 30ms;
-    display: block;
-    border-width: 1px;
-    border-color: #fafafa;
-}
-
-.single-note-wrapper {
-    height: 80%;
-}
-
-
-a.single-note:hover {
-    border-color: #333;
-    background-color: #f5f5f5;
-}
-
-.single-note img {
-    display: block;
-}
-
-.note-logo {
-    float: left;
-    margin-left: 0px;
-    margin-right: 10px;
-    width: 1rem;
-    flex-shrink: 0;
-}
-
 
 dt {
     font-variant-caps: all-small-caps;
@@ -674,71 +625,6 @@ dt {
     font-variant-caps: all-small-caps;
     font-size: 15px;
     text-align: center;
-}
-
-
-.single-note-title {
-    width: 100%;
-    margin: 10px 0px;
-    text-overflow: ellipsis;
-}
-
-.single-note-title,
-#search_bar,
-.post-title h3,
-.contact-info * {
-    border-bottom: none;
-}
-
-.node_label {
-    -webkit-text-stroke: 5px white;
-}
-
-.note-graph {
-    border-radius: 7px;
-    border-style: solid;
-    border-color: #111;
-    border-width: 2px;
-}
-
-circle, line { transition: fill .4s ease; }
-text { transition: hideshow .4s ease; }
-
-.note_list {
-    display: inline-grid;
-    margin: auto;
-    margin-top: 40px;
-    gap: 10px 1%;
-    width: 100%;
-    grid-template-columns: 48% 48%;
-    grid-auto-rows: 190px;
-    align-items: stretch;
-    justify-items: center;
-    padding-left: 0;
-}
-
-.note_list_container {
-    text-align: center;
-}
-
-.single-note-title,
-.note_preview {
-    font-size: 12px;
-    text-align: left;
-}
-
-#search_input {
-    width: 80%;
-    padding: 6px;
-    border-style: solid;
-    border-color: #ddd;
-    border-width: 1px;
-    margin: auto;
-    font-size: 17px;
-}
-
-.note-container {
-    padding-bottom: 10px;
 }
 
 table {
@@ -818,10 +704,6 @@ th {
     cursor: pointer;
 }
 
-.biblio-list {
-    padding-left: 20px;
-}
-
 
 @media (min-width: 600px) {
     .nav-title {
@@ -891,20 +773,6 @@ th {
     .error-page-title {
         font-size: 114px;
     }
-
-    .single-note {
-        padding: 10px 10px;
-    }
-
-    .note_list {
-        gap: 15px 0.5%;
-        grid-template-columns: 33% 33% 33%;
-        grid-auto-rows: 150px;
-    }
-
-    .select-css {
-        width: 12%;
-    }
 }
 
 
@@ -944,26 +812,18 @@ th {
 
     .article-content a,
     .content a {
-        color: #9fcdfc;
+        color: var(--dark-link-color);
     }
     .article-content a:hover,
     .content a:hover {
         color: #eee;
     }
 
-    .single-note {
-        background-color: #3c3c3c;
-        border-color: #666;
-    }
     code {
         background: #111;
     }
     #base_rect {
         fill: #3c3c3c;
-    }
-    a.single-note:hover {
-        border-color: #bbb;
-        background-color: #4d4d4d;
     }
     .pub-wrapper {
         background-color: #444;
@@ -980,10 +840,6 @@ th {
     .article-content hr,
     .content hr {
         border-top: 1px dotted #555;
-    }
-
-    .isso-postbox > .form-wrapper .textarea, .isso-postbox > .form-wrapper .preview {
-        background-color: #444;
     }
 }
 
