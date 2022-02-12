@@ -2,10 +2,13 @@
 <ul class="article-taxonomy">
 {{ if .Params.categories }}
 <hr>
-Categories:
 <li>
-{{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}{{ end }}
-<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+{{ range $index, $category := .Params.categories }}
+<a href="{{ "categories/" | relURL }}{{ . | urlize }}">
+    <span class="tag-item">
+    {{ . }}
+    </span>
+</a>{{ end }}
 </li>
 {{ end }}
 
@@ -15,7 +18,8 @@ Categories:
     <a  href="{{ "tags/" | relURL }}{{ . | urlize }}">
     <span class="tag-item">
         {{ $logo := resources.Get "images/tag_logo.svg" }}
-        <img class="tag-logo" src="{{ $logo.Permalink }}" alt="Logo of a tag: indicates that a tag item follows.">{{ . }}
+        <img class="tag-logo" src="{{ $logo.Permalink }}" alt="Logo of a tag: indicates that a tag item follows.">
+        {{ . }}
         </span>
     </a>
     {{ end }}
