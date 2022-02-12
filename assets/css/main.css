@@ -327,6 +327,7 @@ blockquote p {
     text-decoration: none;
     color: inherit;
     transition: color 300ms;
+    border-bottom: 2px solid #eee;
 }
 
 .article-taxonomy a:hover,
@@ -446,6 +447,8 @@ a.article-author:active {
     display: flex;
     align-items: center;
     background-color: #eee;
+    padding: 3px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .tag-logo {
