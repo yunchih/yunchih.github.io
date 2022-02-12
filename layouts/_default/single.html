@@ -20,29 +20,7 @@
       {{ .Content }}
     </div>
 
-    {{ if (or (.Params.categories) (.Params.tags)) }}
-    <ul class="article-taxonomy">
-      {{ if .Params.categories }}
-      <hr>
-      <li>
-        {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}{{ end }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-      </li>
-      {{ end }}
-
-      {{ if .Params.tags }}
-      <li>
-          {{ range $index, $tag := .Params.tags }}
-          <a  href="{{ "tags/" | relURL }}{{ . | urlize }}">
-              <span class="tag-item">
-                  <img class="tag-logo" src="/img/tag.svg" alt="Logo of a tag: indicates that a tag item follows.">{{ . }}
-              </span>
-          </a>
-          {{ end }}
-      </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-
+    {{ partial "taxonomy.html" . }}
     {{ if .Params.references }}
     <hr>
     <div class="references" >
