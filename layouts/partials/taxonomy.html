@@ -3,6 +3,7 @@
 {{ if .Params.categories }}
 <hr>
 <li>
+    Categories
 {{ range $index, $category := .Params.categories }}
 <a href="{{ "categories/" | relURL }}{{ . | urlize }}">
     <span class="tag-item">
@@ -11,9 +12,9 @@
 </a>{{ end }}
 </li>
 {{ end }}
-
 {{ if .Params.tags }}
 <li>
+    Tags:
     {{ range $index, $tag := .Params.tags }}
     <a  href="{{ "tags/" | relURL }}{{ . | urlize }}">
     <span class="tag-item">

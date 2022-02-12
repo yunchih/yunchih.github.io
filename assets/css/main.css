@@ -323,7 +323,7 @@ blockquote p {
 
 .article-taxonomy a {
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 10px 10px 0 0;
     text-decoration: none;
     color: inherit;
     transition: color 300ms;
