@@ -7,6 +7,20 @@ academics - based on [Natrium](https://github.com/mobybit/hugo-natrium-theme).
 
 See [the example site in action](https://hugcis.github.io/hugo-astatine-theme/).
 
+## Screenshots
+
+### Light mode
+
+![Post list screenshot](images/post_list.png)
+
+![Post screenshot](images/post.png)
+
+### Dark mode
+
+![Post list dark screenshot](images/post_list_dark.png)
+
+![Post dark screenshot](images/post_dark.png)
+
 ## Features
 
 - Blog
