@@ -1,7 +1,11 @@
 # Hugo Another Minimalist Theme
 
-A simple responsive blog theme for [Hugo](https://gohugo.io/) based on 
-[Natrium](https://github.com/mobybit/hugo-natrium-theme)
+[![Build example site](https://github.com/hugcis/hugo-astatine-theme/actions/workflows/main.yml/badge.svg)](https://github.com/hugcis/hugo-astatine-theme/actions/workflows/main.yml)
+
+A simple responsive blog theme for [Hugo](https://gohugo.io/) designed for
+academics - based on [Natrium](https://github.com/mobybit/hugo-natrium-theme).
+
+See [the example site in action](https://hugcis.github.io/hugo-astatine-theme/).
 
 ## Features
 
@@ -11,7 +15,7 @@ A simple responsive blog theme for [Hugo](https://gohugo.io/) based on
 - Privacy (no Google)
 - Taxonomies
 - Syntax highlighting
-- Pagination
+- Microdata
 
 ## Installation
 
