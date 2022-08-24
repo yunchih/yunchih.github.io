@@ -915,11 +915,6 @@ blockquote p {
   margin-bottom: 1.5rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1005,6 +1000,10 @@ blockquote p {
 
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .box-border {
@@ -1189,6 +1188,10 @@ blockquote p {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-nav {
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1270,6 +1273,10 @@ blockquote p {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-none {
@@ -1556,6 +1563,14 @@ blockquote p {
   transition-duration: 150ms;
 }
 
+.delay-150 {
+  transition-delay: 150ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .before\:content-\[\'\2022\'\]::before {
   --tw-content: '•';
   content: var(--tw-content);
@@ -1741,10 +1756,6 @@ blockquote p {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1761,5 +1772,30 @@ blockquote p {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .md\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .md\:border-b {
+    border-bottom-width: 1px;
+  }
+
+  .md\:border-none {
+    border-style: none;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:first\:pl-0:first-child {
+    padding-left: 0px;
   }
 }
