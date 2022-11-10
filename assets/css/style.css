@@ -1940,11 +1940,6 @@ blockquote p {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .lg\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
