@@ -1968,8 +1968,20 @@ blockquote p {
     grid-auto-flow: column;
   }
 
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .md\:border-none {
     border-style: none;
+  }
+
+  .md\:p-2\.5 {
+    padding: 0.625rem;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:px-0 {
