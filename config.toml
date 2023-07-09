@@ -37,6 +37,10 @@ pygmentsStyle = "native"
     # weight = -150
 
 # This links to the page about.md
+[[menu.main]]
+    name = "Document"
+    url = "https://thycat.com/"
+    weight = -110
 # [[menu.main]]
     # name = "About"
     # url = "/about/"
