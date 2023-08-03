@@ -6,7 +6,9 @@ title = "My bet on NVM's next ten years"
 
 ## The Invisibility of Mature Technology
 
-> "As technology becomes ubiquitous it also becomes invisible." Keven Kelly
+> As technology becomes ubiquitous it also becomes invisible.
+>
+> Keven Kelly
 
 As technological innovations mature and become foundational, they seamlessly weave themselves into the fabric of our daily lives.
 Keven Kelly's insight guide our exploration of Non-Volatile Memory (NVM)'s next ten years.
