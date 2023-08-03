@@ -41,7 +41,7 @@ The Retrieval-Augmented LLM (RA-LLM), a state-of-the-art solution, addresses the
 
 - **Efficient Knowledge Incorporation**: Integration of user activities and new data without extensive retraining.
 - **Privacy Preservation**: User data remains secure, without the need for cloud uploads.
-- **Edge Deployment Compatibility**: RA-LLM alleviates the re-training overhead as new knowledge are ingested, thus enabling efficient edge computing deployment.
+- **Edge Deployment**: RA-LLM alleviates the re-training overhead as new knowledge are ingested, thus enabling efficient edge computing deployment.
 
 ### NVM's Role in Supporting RA-LLM
 
