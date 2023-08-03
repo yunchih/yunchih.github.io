@@ -8,7 +8,7 @@ title = "My bet on NVM's next ten years"
 
 > As technology becomes ubiquitous it also becomes invisible.
 >
-> Keven Kelly
+> -- Keven Kelly
 
 As technological innovations mature and become foundational, they seamlessly weave themselves into the fabric of our daily lives.
 Keven Kelly's insight guide our exploration of Non-Volatile Memory (NVM)'s next ten years.
@@ -17,7 +17,7 @@ In this article, we will explore the multifaceted role of NVM to enable long-ter
 
 ## NVM's Role in Modern Systems
 
-The role of Non-Volatile Memory (NVM) extends far beyond traditional data storage. 
+The role of NVM extends far beyond traditional data storage. 
 No longer should we pursue absolute performance and perceive NVM's relative slowness compared to DRAM as a limitation.  Instead, we should place NVM in a larger context of an integrated System-on-Chip (SoC) where NVM and other components are each strategically leveraged for specific responsibilities based on their specific strength to create a balanced technological ecosystem.
 
 For example, NVM will form the basis for AI's continuous background knowledge discovery and non-intrusive tasks, while leaving real-time tasks to specialized components like Neural Processing Units (NPUs). The division of labor between NVM for background tasks and NPUs for real-time inferences represents a mature approach to system design, optimizing both energy efficiency and responsiveness.
@@ -41,11 +41,11 @@ The Retrieval-Augmented LLM (RA-LLM), a state-of-the-art solution, addresses the
 
 - **Efficient Knowledge Incorporation**: Integration of user activities and new data without extensive retraining.
 - **Privacy Preservation**: User data remains secure, without the need for cloud uploads.
-- **Edge Deployment Compatibility**: RA-LLM's streamlined design enables efficient edge computing deployment.
+- **Edge Deployment Compatibility**: RA-LLM alleviates the re-training overhead as new knowledge are ingested, thus enabling efficient edge computing deployment.
 
 ### NVM's Role in Supporting RA-LLM
 
-NVM's potential as a storage backend for RA-LLM allows for the continuous ingestion of vector embedding updates, including user-generated content like photos and health data. Moreover, vector retrieval can be expedited through an NVM chip with in-chip indexing capability, highlighting NVM's adaptability in modern AI contexts.
+NVM's potential as a storage backend for RA-LLM allows for the continuous ingestion of vector embedding updates, including user-generated content like photos and health data. Moreover, vector retrieval can be accelerated through an NVM chip with in-chip indexing capability, highlighting NVM's adaptability in modern AI contexts.
 
 ## Inference as a Continuous Process: Autonomous Agents and NVM
 
