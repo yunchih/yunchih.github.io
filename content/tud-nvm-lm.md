@@ -1,6 +1,6 @@
 +++
 date = "2023-08-03"
-title = "My bet on NVM's next ten years"
+title = "What's next step for NVM in the age of AI?"
 +++
 
 
@@ -24,7 +24,7 @@ For example, NVM will form the basis for AI's continuous background knowledge di
 
 Moreover, as we will explore later, NVM can transcend further beyond its traditional roles. New technology makes it possible to embed computation directly into NVM, leading to our proposal of a novel storage chip with in-chip indexing capability. Unlike general-purpose SSDs that rely on traditional I/O interfaces, this storage chip is designed to be deployed efficiently as a specialized accelerator within a System-on-Chip (SoC). This innovative configuration optimizes both storage and processing, providing a tailored solution that complements the specific demands of modern AI applications.
 
-
+The proposed chip, called Search-in-Memory (SiM) chip, incorporates vectorized data comparison circuits in NAND flash memory so that data-bound operations that commonly become the bottleneck of data indexing can be performed in-situ inside the SSD instead of transferring the index blocks to the host CPU.  SiM extends existing flash memory chips without introducing extensive hardware changes. It ensures compatibility with existing circuits and preserves their high-density storage functionality.  Further details about SiM will be covered in a separate talk.
 
 ## The Rise of Large Language Models (LLMs) and Their Connection to NVM
 
