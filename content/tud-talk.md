@@ -4,21 +4,21 @@ title = "My bet on NVM's next ten years"
 +++
 
 
-## Introduction: The Invisibility of Mature Technology
+## The Invisibility of Mature Technology
 
 > "As technology becomes ubiquitous it also becomes invisible." Keven Kelly
 
 As technological innovations mature and become foundational, they seamlessly weave themselves into the fabric of our daily lives.
 Keven Kelly's insight guide our exploration of Non-Volatile Memory (NVM)'s next ten years.
-In this article, we will explore the multifaceted role of NVM to enable long-term efficiency and continuous learning in the age of AI.  We will talk about the innovative vision of NVM-based storage chips, the future of inference through autonomous agents, and the ethical considerations that accompany these advancements. Through this exploration, we will uncover how NVM is not merely a component of our technological ecosystem but a pivotal element shaping our future.
+In this article, we will explore the multifaceted role of NVM to enable long-term efficiency and continuous learning in the age of AI.  We will talk about the innovative vision of NVM-based storage chips, the future of inference through autonomous agents, and NVM's position under the architecture of future computing system.
 
 
 ## NVM's Role in Modern Systems
 
 The role of Non-Volatile Memory (NVM) extends far beyond traditional data storage. 
-No longer should we pursue absolute performance and perceive NVM's relative slowness compared to DRAM as a limitation.  Instead, we should place NVM in a larger context of an integrated computing platform where NVM and other components are each strategically leveraged for specific responsibilities based on their specific strength to create a balanced technological ecosystem.
+No longer should we pursue absolute performance and perceive NVM's relative slowness compared to DRAM as a limitation.  Instead, we should place NVM in a larger context of an integrated System-on-Chip (SoC) where NVM and other components are each strategically leveraged for specific responsibilities based on their specific strength to create a balanced technological ecosystem.
 
-For example, NVM will form the basis for AI's continuous background knowledge discovery and non-intrusive tasks, while leaving real-time tasks to specialized components like Neural Processing Units (NPUs). The division of labor between NVM for background tasks and NPUs for real-time inferences represents a mature approach to system design, optimizing efficiency and responsiveness.
+For example, NVM will form the basis for AI's continuous background knowledge discovery and non-intrusive tasks, while leaving real-time tasks to specialized components like Neural Processing Units (NPUs). The division of labor between NVM for background tasks and NPUs for real-time inferences represents a mature approach to system design, optimizing both energy efficiency and responsiveness.
 
 Moreover, as we will explore later, NVM can transcend further beyond its traditional roles. New technology makes it possible to embed computation directly into NVM, leading to our proposal of a novel storage chip with in-chip indexing capability. Unlike general-purpose SSDs that rely on traditional I/O interfaces, this storage chip is designed to be deployed efficiently as a specialized accelerator within a System-on-Chip (SoC). This innovative configuration optimizes both storage and processing, providing a tailored solution that complements the specific demands of modern AI applications.
 
