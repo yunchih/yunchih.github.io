@@ -49,8 +49,6 @@ NVM's potential as a storage backend for RA-LLM allows for the continuous ingest
 
 ## Inference as a Continuous Process: Autonomous Agents and NVM
 
-### Introduction: Rethinking Inference
-
 The traditional idea of inference as a one-time event is changing. Instead, inference is an ongoing process in a feedback loop within autonomous agents.
 
 ### Autonomous Agents: Learning and Improving
