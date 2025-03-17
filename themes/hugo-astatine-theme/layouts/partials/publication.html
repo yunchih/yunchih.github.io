@@ -1,14 +1,16 @@
 <div class="pub-wrapper w-full inline-flex flex-wrap items-center
-            my-1.5 p-2.5 rounded bg-slate-200 dark:bg-slate-700 box-border
-            leading-tight justify-around" id="{{anchorize .title}}"
+            my-1.5 p-1.5 rounded bg-slate-200 dark:bg-slate-700 box-border
+            leading-tight justify-around" id="{{anchorize .title}}" style="padding-left:20px"
      itemscope itemtype="http://schema.org/ScholarlyArticle">
+     <!--
     <div class="pub-image basis-20 grow-0 shrink" itemprop="image"
 
          itemscope itemtype="http://schema.org/ImageObject">
-        <!-- <img alt="{{ .title }} paper illustration"
+         <img alt="{{ .title }} paper illustration"
              itemprop="url" src="{{ .image }}"
-             class="w-full"/> -->
+             class="w-full"/> 
     </div>
+    -->
     <div class="publication grow shrink-2 basis-3/4 my-1.5 mx-2">
         {{ range $author_index, $author_val := .authors }}
         {{ if $author_val.me }}
@@ -23,16 +25,18 @@
         {{ end }}
         <br>
         <b>
-            <a target="_blank" href="{{ .pdf }}">
-                <span itemprop="name">{{ .title }}</span>
-            </a>
+            <!--<a target="_blank" href="{{ .pdf }}"> -->
+                <span style="color: rgb(30, 64, 175)", itemprop="name">{{ .title }}</span>
+            <!-- </a> -->
         </b>
         <meta itemprop="headline" content="{{ .title }}"/>
         <br>
         {{ if .journal }}
         <div>
         In <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-            <i itemprop="name">{{- .journal -}}</i></span>,
+            
+            <i itemprop="name">{{- .journal -}} {{ if .bestpaper }} <b>(Best Paper Award Candidate)</b> {{ end }}</i></span>,
+            
         {{ end }}
         <meta itemprop="datePublished" content="{{- .date -}}">{{- .date -}}.
         </div>

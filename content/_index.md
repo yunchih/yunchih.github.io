@@ -15,18 +15,18 @@ imgname:
 #     type: $IMAGE_TYPE
 # ...
 # A title (job title or "Researcher", "PhD student", etc.)
-personal_title: "PhD Student"
+personal_title: "Postdoctoral Researcher"
 # An address (you can list multiple)
 address: 
   - 
-    name: National Taiwan University
-    street: Room 438, Dept. of Computer Science & Engineering, No.1, Sec. 4, Roosevelt Road
-    postal_code: 10617
-    locality: Taipei, Taiwan
+    name: Technical University of Dortmund
+    street: Otto-Hahn-Strasse 16
+    postal_code: 44227
+    locality: Dortmund, Germany
 
 # === Optional fields ===
 # Add an email with a mailto: hyperlink
-# email: aaaa@example.com
+email: yunchih.chen@tu-dortmund.de
 # Add an email "image" for spam protection. With light and dark mode
 # emailImg: 
 #   dark: /img/dark_email.png
@@ -40,79 +40,131 @@ publications:
         - name: Yun-Chih Chen
           me: true
         - name: Chun-Feng Wu
-        - name: Yuan-Hao Chang
-        - name: and Tei-Wei Kuo
-    title: "Optimized Ephemeral Data Storage"
-    # Will write "In ${journal}, ${date}"
-    date: 2022
-    journal: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
-    citation: "@ARTICLE{9964402,\n
-  author={Chen, Yun-Chih and Wu, Chun-Feng and Chang, Yuan-Hao and Kuo, Tei-Wei},\n
-  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, \n
-  title={ZoneLife: How to Utilize Data Lifetime Semantics to Make SSDs Smarter}, \n
-  year={2022},\n
-  volume={},\n
-  number={},\n
-  pages={1-1},\n
-  doi={10.1109/TCAD.2022.3224898}}"
-
-    pdf: https://ieeexplore.ieee.org/document/9964402
-    # A list of link that will appear as badges at the bottom of the publication.
-    links:
-      -
-        name: Two page abstract
-        url: "https://yunchih.thycat.com/files/DAC2023-PhD-Forum-Abstract-Yun-Chih-Chen-v1.pdf"
-      -
-        name: Poster
-        url: "https://yunchih.thycat.com/files/DAC2023-PhD-Forum-Poster-Yun-Chih-Chen-v1.pdf"
-    # A description for the paper.
-    description: I propose a novel multi-ECC SSD firmware to store short-lived data with significantly less resources yet strong guarantee on data safety.  Experiments show enhanced throughput and expanded endurance.
+        - name: Yuan-Hao Chang,
+        - name: Tei-Wei Kuo
+    title: "Reliable, Versatile, and Efficient Data Matching in SSD's NAND Flash Memory Chip for Data Indexing Acceleration"
+    date: 2024
+    journal: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD). (Integrated with ACM/IEEE CODES+ISSS'24) (**Best Paper Award**)
   - 
     authors:
-        - name: Hasan Alhasan
+        - name: Wen-Yi Wang
+        - name: Chun-Feng Wu
         - name: Yun-Chih Chen
           me: true
-        - name: and Chien-Chung Ho
-    title: "SSD Power Efficiency Enhancement"
-    # Will write "In ${journal}, ${date}"
-    date: 2020
+        - name: Tei-Wei Kuo,
+        - name: Yuan-Hao Chang
+    title: "GEAR: Graph-Evolving Aware Data ArrangeR to Enhance the Performance of Traversing Evolving Graphs on SCM"
+    date: 2024
+    journal: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD). (Integrated with ACM/IEEE CODES+ISSS'24)
+  - 
+    authors:
+        - name: Shi-Zhe Lin
+        - name: Yun-Chih Chen
+          me: true
+        - name: Yuan-Hao Chang
+        - name: Tei-Wei Kuo,
+        - name: Hsiang-Pang Li
+    title: "LUTIN: Efficient Neural Network Inference with Table Lookup"
+    date: 2024
     journal: IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED)
-    citation: "@INPROCEEDINGS{9502496,\n
-  author={Alhasan, Hasan and Chen, Yun-Chih and Ho, Chien-Chung},\n
-  booktitle={2021 IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED)},\n
-  title={RVO: Unleashing SSD’s Parallelism by Harnessing the Unused Power},\n
-  year={2021},\n
-  pages={1-6},\n
-  doi={10.1109/ISLPED52811.2021.9502496}}"
-
-    pdf: https://ieeexplore.ieee.org/document/9502496
-    description: I identified energy under-utilization in conventional NAND flash programming and proposed a low-level command that recycles the wastage to enhance system parallelism.  Accompanied by a scheduling framework, my design achieves industrial-grade read latency requirements, even in write-intensive workloads.
+  - 
+    authors:
+        - name: Chih-Ting Lo
+        - name: Yun-Chih Chen
+          me: true
+        - name: Yuan-Hao Chang,
+        - name: Tei-Wei Kuo
+    title: "HAPIC: A Scalable, Lightweight and Reactive Cache for Persistent-Memory-Based Index"
+    date: 2023
+    journal: IEEE/ACM International Conference on Computer Aided Design (ICCAD)
+  - 
+    authors:
+        - name: Zheng-Wei Wu
+        - name: Yun-Chih Chen
+          me: true
+        - name: Yuan-Hao Chang,
+        - name: Tei-Wei Kuo
+    title: "APP: Enabling Soft Real-Time Execution on Densely-Populated Hybrid Memory System"
+    date: 2023
+    journal: ACM/IEEE Design Automation Conference (DAC)
+  - 
+    authors:
+        - name: Tsung-Yen Hsu
+        - name: Yi-Shen Chen
+        - name: Yun-Chih Chen
+          me: true
+        - name: Yuan-Hao Chang,
+        - name: Tei-Wei Kuo
+    title: "REFORM: Responsive, Energy-efficient Frame Rendering for Mobile Devices"
+    date: 2023
+    bestpaper: yes
+    journal: IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED)
   - 
     authors:
         - name: Yun-Chih Chen
           me: true
         - name: Chun-Feng Wu
-        - name: Yuan-Hao Chang
-        - name: and Tei-Wei Kuo
-    title: "Performant Consistent Storage Design"
-    # Will write "In ${journal}, ${date}"
+        - name: Yuan-Hao Chang,
+        - name: Tei-Wei Kuo
+    title: "ZoneLife: How to Utilize Data Lifetime Semantics to Make SSDs Smarter"
+    date: 2022
+    journal: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+  - 
+    authors:
+        - name: Hasan Alhasan
+        - name: Yun-Chih Chen
+          me: true
+        - name: Chien-Chung Ho,
+        - name: Tei-Wei Kuo
+    title: "RUSM: Harnessing Unused Resources in 3D NAND SSD to Enhance Reading Performance"
+    date: 2022
+    journal: IEEE Non-Volatile Memory Systems and Applications Symposium (NVMSA)
+  - 
+    authors:
+        - name: Yun-Chih Chen
+          me: true
+        - name: Chun-Feng Wu
+        - name: Yuan-Hao Chang,
+        - name: Tei-Wei Kuo
+    title: "Reptail: Cutting Storage Tail Latency with Inherent Redundancy"
     date: 2021
     journal: ACM/IEEE Design Automation Conference (DAC)
-    citation: "@INPROCEEDINGS{9586218,\n
-  author={Chen, Yun-Chih and Wu, Chun-Feng and Chang, Yuan-Hao and Kuo, Tei-Wei},\n
-  booktitle={2021 58th ACM/IEEE Design Automation Conference (DAC)}, \n
-  title={Reptail: Cutting Storage Tail Latency with Inherent Redundancy},\n 
-  year={2021},\n
-  volume={},\n
-  number={},\n
-  pages={595-600},\n
-  doi={10.1109/DAC18074.2021.9586218}}"
-
-    pdf: https://ieeexplore.ieee.org/document/9586218
-    description: I proposed a hardware-software co-design that exploits the inherent redundancy in journaling file-system to improves the 99th percentile read latency of ultra-dense SSD by 40%.  My design overcomes several technical challenges, such as journal fragmentation, space limitation and communication of semantics.
+  - 
+    authors:
+        - name: Hasan Alhasan
+        - name: Yun-Chih Chen
+          me: true
+        - name: Chien-Chung Ho
+    title: "RVO: Unleashing SSD’s Parallelism by Harnessing the Unused Power"
+    date: 2021
+    bestpaper: yes
+    journal: IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED)
 
 
 ---
-# Bio
+# Research
 
-My research focuses on hardware/software co-design for Solid State Drives (SSDs). I’m currently working on the design of peripheral circuits within NAND flash chips that can perform bulk bitwise processing in-memory. The novel circuit will enable database indexes to take advantage of SSD’s massive parallelism and beyond-DRAM capacity.
+I received PhD degree in 2023 from National Taiwan University, Computer Science \& Information Engineering, supervised by Prof. Tei-Wei Kuo.
+My PhD dissertation introduced vertical integration solutions for storage systems that leveraged application semantics to optimize hardware request scheduling and reduce error correction costs.
+Another key contribution of my dissertation was a processing-in-memory chip with an emphasis on real-world applicability. Instead of adding a dedicated processor, I re-purposed existing logic in memory chips for highly parallel data matching while preserving their traditional roles in read-out and memory management. The result was a cost-effective, versatile chip that significantly reduced the database system’s dependency on power-hungry DRAM-based caches. This work won the **Best Paper Award in 2024 CODES+ISSS conference (1 out of 198 papers)**.
+
+My ongoing research focuses on designing sustainable and fault-tolerant memory systems to tackle the declining reliability issue in modern memory technologies. 
+In the long term, I aim to design modular and flexible architectural support for heterogeneous, highly-integrated SoCs.  This support will enable efficient execution of different computation phases in a data pipeline across diverse accelerators while providing an abstraction layer to manage the unique properties of various memory media.
+
+
+
+
+# Teaching
+
+- Teaching Assistant: From 2015 to 2019, I worked as a teaching assistant in the NTU CS's Public Workstation Laboratory.  I led a 17-person system team responsible for the department's public computing services.    For three semesters, I delivered lectures and created course materials for a 72-student class. I also mentored undergraduate interns.
+- I mentored numerous undergrad students, nine master students, and four PhD student throughout my PhD study and post-doctoral position.
+- I teach a 4-hour course, Real-time Operating System, in TU Dortmund in winter semester, 2024
+
+
+# Awards:
+
+- **2024**: Best Paper Award (2024 CODES+ISSS conference)
+- **2023**: Taiwan Information Storage Association PhD Dissertation Award
+- **2021**: Synopsys - Prof. Chung Laung Liu Ph.D. Fellowship
+- **2019**: Excellent TA Award (CSIE2311 - Network Admin. & System Admin.)
+- **2018**: Excellent TA Award (CSIE2311 - Network Admin. & System Admin.)
