@@ -1,60 +1,15 @@
-# -- Site Configuration --
+# Basic config
+baseURL = "https://example.com"
+theme = "hugo-bearcub"
+copyright = "John Doe (CC BY 4.0)"
+defaultContentLanguage = "en"
 
-# URL to the root of your website.
-baseURL = "https://yunchih.github.io"
-
-# Site's language code
-languageCode = 'en-us'
-
-title = ""
-
-# theme = "kayal"
-theme = "bearcub"
-
-# Number of articles per page in the listing.
-[pagination]
-  pagerSize = 5
-
-# Enable processing of emojis in markdown.
-enableEmoji = true
-
-# Enable creation of robots.txt for search engine crawling.
+# Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 
-# Length of default summaries.
-summaryLength = 0
-
-# Build drafts during site generation.
-buildDrafts = true
-# Build pages with future dates during site generation.
-buildFuture = true
-
-# The types of outputs to generate for the homepage.
-# RSS is required to create RSS feeds, and JSON is needed for the search to function.
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-# Sitemap setting
-[sitemap]
-  changefreq = 'daily'
-  filename = 'sitemap.xml'
-  priority = 0.5
-
-# Google Analytics Configuration
-# [services]
-#   [services.googleAnalytics]
-#     ID = 'G-MEASUREMENT_ID'
-
-[goldmark]
-[goldmark.renderer]
-unsafe = true
-[goldmark.extensions]
-[goldmark.extensions.passthrough]
-enable = true
-[goldmark.extensions.passthrough.delimiters]
-block = [['\[', '\]'], ['$$', '$$']]
-inline = [['\(', '\)']]
-
+# Setup syntax highlighting without inline styles. For more information about
+# why you'd want to avoid inline styles, see
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
 [markup]
   [markup.highlight]
     lineNos = true
@@ -68,25 +23,26 @@ inline = [['\(', '\)']]
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "Yun-Chih Chen (陳耘志)"
-    languageName = "English 🇺🇸"
+    title = "Bear Cub"
+    languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      madeWith = "Yun-Chih Chen (2025)"
+      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.pt]
-    title = "陳 耘 志"
-    languageName = "中文🇹🇼" 
-    LanguageCode = "zh-TW"
+    title = "Bear Cub"
+    languageName = "pt-BR 🇧🇷"
+    LanguageCode = "pt-BR"
     contentDir = "content.pt"
     [languages.pt.params]
-      madeWith = "陳耘志 (2025)"
+      madeWith = "Feito com [Bear Cub](https://github.com/clente/hugo-bearcub)"
+
 [params]
   # The description of your website
-  description = "Yun-Chih Chen"
+  description = "Bear Cub Demo"
 
   # The path to your favicon
-  favicon = "img/favicon-32x32.png"
+  favicon = "images/favicon.png"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
@@ -96,7 +52,7 @@ inline = [['\(', '\)']]
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Yun-Chih Chen"
+  title = "Bear Cub"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
@@ -111,8 +67,7 @@ inline = [['\(', '\)']]
   # "herman". The former is what you see on Bear Cub's demo (an optimized
   # version of Hugo Bear Blog), while the latter has a more modern look based on
   # Herman Martinus's version of the Blogster Minimal theme for Astro.
-  # themeStyle = "herman"
-  themeStyle = "yunchih"
+  themeStyle = "original"
 
   # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
   # for posts that don't have `images` defined in their front matter; By setting

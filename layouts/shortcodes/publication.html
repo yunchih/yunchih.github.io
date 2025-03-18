@@ -1,0 +1,19 @@
+<div class="pub">
+    {{- $authorsParam := .Get "authors" | default "" -}}
+    {{- if $authorsParam -}}
+      {{- $authors := split $authorsParam ", " -}}
+      {{- range $index, $author := $authors -}}
+        {{- if eq $author "Yun-Chih Chen" -}}
+          <strong>{{ $author }}</strong>
+        {{- else -}}
+          {{ $author }}
+        {{- end -}}
+        {{- if lt (add $index 1) (len $authors) -}}, {{ end -}}
+      {{- end -}}
+    {{- else -}}
+      <em>No authors listed</em>
+    {{- end -}}
+    , "<span style="color: #48acdf;">{{ .Get "title" | default "Untitled" }}</span>"
+    , <em>{{ .Get "conference" | default "No conference specified" | markdownify }}</em>
+    , {{ .Get "year" | default "No year specified" }}.
+<div>
