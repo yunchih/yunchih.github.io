@@ -8,7 +8,6 @@ languageCode = 'en-us'
 
 title = ""
 
-# theme = "kayal"
 theme = "bearcub"
 
 # Number of articles per page in the listing.
