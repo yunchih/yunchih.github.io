@@ -68,7 +68,7 @@ inline = [['\(', '\)']]
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "Yun-Chih Chen"
+    title = "Yun-Chih Chen (陳耘志)"
     languageName = "English 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
@@ -86,7 +86,7 @@ inline = [['\(', '\)']]
   description = "Yun-Chih Chen"
 
   # The path to your favicon
-  favicon = "images/favicon.png"
+  favicon = "img/favicon-32x32.png"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information

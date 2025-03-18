@@ -1,22 +1,32 @@
-
 # Research
 
 {{< figure
   src="/img/profile.jpg" alt="Yun-Chih" class="left profile"
 >}}
 
-I received PhD degree in 2023 from National Taiwan University, Computer Science \& Information Engineering, supervised by Prof. Tei-Wei Kuo.
-I am currently a postdoctoral researcher at TU Dortmund, Germany.
-My PhD dissertation introduced vertical integration solutions for storage systems that leveraged application semantics to optimize hardware request scheduling and reduce error correction costs.
-Another key contribution of my dissertation was a processing-in-memory chip with an emphasis on real-world applicability. Instead of adding a dedicated processor, I re-purposed existing logic in memory chips for highly parallel data matching while preserving their traditional roles in read-out and memory management. The result was a cost-effective, versatile chip that significantly reduced the database system’s dependency on power-hungry DRAM-based caches. This work won the **Best Paper Award in 2024 CODES+ISSS conference (1 out of 198 papers)**.
+I am currently a postdoctoral researcher at TU Dortmund, Germany. I will join National Tsing Hua University as an assistant professor in August, 2025.
 
-My ongoing research focuses on designing sustainable and fault-tolerant memory systems to tackle the declining reliability issue in modern memory technologies. 
-In the long term, I aim to design modular and flexible architectural support for heterogeneous, highly-integrated SoCs.  This support will enable efficient execution of different computation phases in a data pipeline across diverse accelerators while providing an abstraction layer to manage the unique properties of various memory media.
+My research focuses on operating systems, file systems, databases, and computer architecture. If you enjoy building real-world systems and infrastructure, this could be a great opportunity for you! I have extensive experience with open-source system projects.  I also have strong collaborations with researchers in Germany.  We have opportunities for international research exchange.
+
+I am always looking for motivated students who are passionate about system research.  If you’re interested, feel free to reach out! Let’s build something exciting together!
+
+我們的研究團隊正在尋找對系統研究充滿熱情的學生！無論你想找碩班、博班指導老師、大學專題研究，都歡迎寄信給我，一起聊聊。
+
+我跟德國的研究團隊保持緊密合作，提供國際交換的機會。
+
+![email](img/email.gif)
+
+# My Background 
+
+- **2024 - present**: Postdoctoral Researcher, TU Dortmund, Germany
+- **2023/08 - 2023/12**: Postdoctoral Researcher, TU Dortmund, Germany
+- **2018 - 2023/07**: Ph.D. in Computer Science \& Information Engineeering, National Taiwan University (Advisor: Prof. Tei-Wei Kuo)
+- **2014 - 2018**: B.S. in Computer Science \& Information Engineering, National Taiwan University
 
 # Services
 
-- 2025: Technical Program Committee Member (International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES))
-- 2025: Web Chair (ESWEEK)
+- **2025**: Technical Program Committee Member (International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES))
+- **2025**: Web Chair (ESWEEK)
 
 # Awards
 
