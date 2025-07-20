@@ -25,6 +25,7 @@ I am looking for students who are passionate about building system.  If you’re
 
 # Services
 
+- **2025**: Technical Program Committee Member (IEEE International Conference on Computer Design (ICCD)
 - **2025**: Technical Program Committee Member (International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES))
 - **2025**: Web Chair (Embedded Systems Week)
 
