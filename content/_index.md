@@ -4,7 +4,7 @@
   src="/img/profile.jpg" alt="Yun-Chih" class="left profile"
 >}}
 
-I am currently a postdoctoral researcher at TU Dortmund, Germany. I will join Computer Science Department, National Tsing Hua University as an assistant professor in August, 2025.
+I am an assistant professor at Computer Science Department, National Tsing Hua University.
 
 My research focuses on operating systems, file systems, databases, and computer architecture. If you enjoy building real-world systems and infrastructure, this could be a great opportunity for you! I have extensive experience with open-source system projects.  I also have strong collaborations with researchers in Germany.  We have opportunities for international research exchange!
 
@@ -14,7 +14,7 @@ I am looking for students who are passionate about building system.  If you’re
 
 我跟德國的研究團隊保持緊密合作，提供國際交換的機會。
 
-![email](img/email.gif)
+![email](img/email.png)
 
 # My Background 
 
