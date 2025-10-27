@@ -31,7 +31,7 @@ buildFuture = true
 # The types of outputs to generate for the homepage.
 # RSS is required to create RSS feeds, and JSON is needed for the search to function.
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "JSON"]
 
 # Sitemap setting
 [sitemap]
@@ -73,13 +73,13 @@ inline = [['\(', '\)']]
     contentDir = "content"
     [languages.en.params]
       madeWith = "Yun-Chih Chen (2025)"
-  [languages.pt]
-    title = "陳 耘 志"
-    languageName = "中文🇹🇼" 
-    LanguageCode = "zh-TW"
-    contentDir = "content.pt"
-    [languages.pt.params]
-      madeWith = "陳耘志 (2025)"
+  # [languages.pt]
+  #   title = "陳 耘 志"
+  #   languageName = "中文🇹🇼" 
+  #   LanguageCode = "zh-TW"
+  #   contentDir = "content.pt"
+  #   [languages.pt.params]
+  #     madeWith = "陳耘志 (2025)"
 [params]
   # The description of your website
   description = "Yun-Chih Chen"
@@ -129,5 +129,5 @@ inline = [['\(', '\)']]
   # email is also added to the footer of each post. You can hide the "reply to"
   # link by using a `hideReply` param in front matter.
   [params.author]
-    name = "John Doe" # Your name as shown in the RSS feed metadata
-    email = "me@example.com" # Added to the footer so readers can reply to posts
+    name = "Yun-Chih Chen" # Your name as shown in the RSS feed metadata
+    email = "yunchih@cs.nthu.edu.tw" # Added to the footer so readers can reply to posts
