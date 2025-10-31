@@ -32,7 +32,7 @@ I am looking for students who are passionate about building system. If you’re 
 
 我於德國擔任博士後研究員期間，密集參與德國 6GEM 聯盟（預算 4300 萬歐元）、SPP 2377 Priority Program（涵蓋 13 個機構與 23 位主持人），並與慕尼黑工業大學（TU Munich）、卡爾斯魯爾理工學院（Karlsruhe Institute of Technology）等頂尖學府維繫長期合作關係，為臺灣注入豐沛的國際研究動能。我與德國合作團隊於 ICDE 2025 發表論文，將記憶體可靠性（Memory Reliability）視為可調維度，設計可在錯誤中運作的 Error-Adaptive Data Structures。此概念挑戰資料庫系統長期以來的「完美記憶體」假設，使儲存與資料庫系統能在可靠度、能耗與成本之間取得新平衡。
 
-我長期深耕低功耗系統設計，兩度獲得 ISLPED 最佳論文獎提名（2021, 2023），並發表多樣成果於 IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems，與 DAC、ICCAD 等頂尖會議發表九篇論文，並於 2024 年受邀在 ESWEEK 會議開設 Tutorial，同時擔任 IEEE CASES 與 ICCD Program Committee，以及 ESWEEK 2025 籌備委員。
+我長期深耕低功耗系統設計，兩度獲得 ISLPED 最佳論文獎提名（2021, 2023），並發表多樣成果於 IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems，與 DAC、ICCAD 等頂尖會議。我在 2024 年受邀在 ESWEEK 會議開設 Tutorial，同時擔任 IEEE CASES 與 ICCD Program Committee，以及 ESWEEK 2025 籌備委員。
 我的博士論文提出「資料生命週期導向的垂直整合設計（Vertical Integration for Lifetime-Aware Storage Systems）」，降低錯誤修正開銷並延長快閃記憶體壽命。此貢獻使我榮獲台灣資訊儲存技術協會博士論文獎與劉炯朗教授博士獎學金。
 
 # Teaching
