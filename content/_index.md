@@ -4,17 +4,36 @@
   src="/img/profile.jpg" alt="Yun-Chih" class="left profile"
 >}}
 
-I am an assistant professor at Computer Science Department, National Tsing Hua University.
+My research focuses on operating systems, file systems, databases, and computer architecture. If you enjoy building real-world systems and infrastructure, this could be a great opportunity for you! I have extensive experience with open-source system projects. I also have strong collaborations with researchers in Germany. We have opportunities for international research exchange!
 
-My research focuses on operating systems, file systems, databases, and computer architecture. If you enjoy building real-world systems and infrastructure, this could be a great opportunity for you! I have extensive experience with open-source system projects.  I also have strong collaborations with researchers in Germany.  We have opportunities for international research exchange!
+Before joining NTHU, I was a postdoc at Technische Universität Dortmund in Germany. My recent research explores hardware-software co-design to reduce the carbon footprint of computing.
 
-I am looking for students who are passionate about building system.  If you’re interested, feel free to reach out! Let’s build something exciting together!
+I am looking for students who are passionate about building system. If you’re interested, feel free to reach out! Let’s build something exciting together! 
 
 我們的研究團隊正在尋找對系統研究充滿熱情的學生！無論你想找碩班、博班指導老師、大學專題研究，都歡迎寄信給我，一起聊聊。
 
-我跟德國的研究團隊保持緊密合作，提供國際交換的機會。
-
 ![email](img/email.png)
+
+
+# 研究方向
+
+電腦越來越快、越來越便宜，但進步的背後，如何永續？
+本實驗室致力於研究軟硬體整合的系統架構，降低數位基礎設施的碳足跡，同時確保長期可靠性與運算永續性。
+
+根據美國能源部（DOE）與國際能源總署（IEA）最新報告，**2028 年資料中心耗電將佔全美總電力的 6.7–12%**，其中**冷卻能耗高達 75%**。在高效能伺服器中，**DRAM 佔整體功耗的 30–50%**；即使採用 ECC 防護與液冷技術，記憶體仍因高溫導致資料保持時間急遽下降，僅刷新命令就消耗了**約 35% 的 DRAM 能量與 25% 的頻寬**。這些能耗並未轉化為實質計算，而是浪費於維持「可靠度幻覺」的代價。
+
+更令人憂心的是，**快閃記憶體的碳足跡已超過高階 CPU 十倍**。伺服器中的 SSD 平均僅使用設計壽命的 **15%** 即退役，手機的快閃記憶體則往往只使用不到 **5%** 就與整機一同報廢。2023 年台灣僅有 **12% 舊手機被回收**；即便回收，實際減碳效益仍低於製造碳排的 **2%**。換言之，多數儲存裝置在「還未壞、但不再被信任」的情況下提前被丟棄，形成龐大的電子廢棄。
+
+本實驗室的研究結合作業系統、資料結構與計算機架構三大層面，探索如何透過軟硬體整合設計提升系統效能、永續性與耐用度
+
+### 我的專長 (My Expertise)
+
+我是記憶體與儲存系統以及軟硬體整合設計的專家，在電腦架構與系統領域已提出多項重要突破。在 2024 年，我發表的記憶體內搜尋架構（In-Memory Search Architecture）提出將「資料驗證（Data Verification）」邏輯用於「資料索引比對（Data Matching）」，此創新設計有效降低先進製程晶片的能耗與製造碳足跡，榮獲嵌入式系統領域頂級會議 ACM/IEEE CODES+ISSS 最佳論文獎。
+
+我於德國擔任博士後研究員期間，密集參與德國 6GEM 聯盟（預算 4300 萬歐元）、SPP 2377 Priority Program（涵蓋 13 個機構與 23 位主持人），並與慕尼黑工業大學（TU Munich）、卡爾斯魯爾理工學院（Karlsruhe Institute of Technology）等頂尖學府維繫長期合作關係，為臺灣注入豐沛的國際研究動能。我與德國合作團隊於 ICDE 2025 發表論文，將記憶體可靠性（Memory Reliability）視為可調維度，設計可在錯誤中運作的 Error-Adaptive Data Structures。此概念挑戰資料庫系統長期以來的「完美記憶體」假設，使儲存與資料庫系統能在可靠度、能耗與成本之間取得新平衡。
+
+我長期深耕低功耗系統設計，兩度獲得 ISLPED 最佳論文獎提名（2021, 2023），並發表多樣成果於 IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems，與 DAC、ICCAD 等頂尖會議發表九篇論文，並於 2024 年受邀在 ESWEEK 會議開設 Tutorial，同時擔任 IEEE CASES 與 ICCD Program Committee，以及 ESWEEK 2025 籌備委員。
+我的博士論文提出「資料生命週期導向的垂直整合設計（Vertical Integration for Lifetime-Aware Storage Systems）」，降低錯誤修正開銷並延長快閃記憶體壽命。此貢獻使我榮獲台灣資訊儲存技術協會博士論文獎與劉炯朗教授博士獎學金。
 
 # Teaching
 
@@ -29,7 +48,7 @@ I am looking for students who are passionate about building system.  If you’re
 
 # Services
 
-- **2025**: Technical Program Committee Member (IEEE International Conference on Computer Design (ICCD)
+- **2025**: Technical Program Committee Member (IEEE International Conference on Computer Design (ICCD))
 - **2025**: Technical Program Committee Member (International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES))
 - **2025**: Web Chair (Embedded Systems Week)
 
