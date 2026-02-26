@@ -37,7 +37,9 @@ I am looking for students who are passionate about building system. If you’re 
 
 # Teaching
 
-[Operating System (2025 Fall)](https://sys-nthu.github.io/os25-fall/): many material for you to explore!
+* [Operating System (2025 Fall)](https://sys-nthu.github.io/os25-fall/): many material for you to explore!
+* [Advanced Storage System (2026 Spring)](https://lego.sys-nthu.tw/): **NEW**
+
 
 # My Background 
 
@@ -45,6 +47,12 @@ I am looking for students who are passionate about building system. If you’re 
 - **2023/08 - 2023/12**: Postdoctoral Researcher, Academia Sinica, Taiwan
 - **2018/08 - 2023/07**: Ph.D. in Computer Science \& Information Engineeering, National Taiwan University (Advisor: Prof. Tei-Wei Kuo)
 - **2014 - 2018**: B.S. in Computer Science \& Information Engineering, National Taiwan University
+
+# News
+
+**2025/10/31**: Our lab office room has been renovated.  Enjoy!
+
+![](/img/lab.jpeg)
 
 # Services
 
@@ -54,6 +62,7 @@ I am looking for students who are passionate about building system. If you’re 
 
 # Awards
 
+- **2026**: Yushang Young Scholar, Ministry of Education
 - **2024**: Best Paper Award (2024 CODES+ISSS conference)
 - **2023**: Taiwan Information Storage Association PhD Dissertation Award
 - **2021**: Synopsys - Prof. Chung Laung Liu Ph.D. Fellowship
