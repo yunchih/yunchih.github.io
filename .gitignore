@@ -1,4 +1,5 @@
 python-env
 public
 site
+resources
 .hugo_build.lock
