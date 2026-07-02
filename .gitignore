@@ -1,5 +1,2 @@
-python-env
-public
-site
-resources
-.hugo_build.lock
+_site/
+.DS_Store
